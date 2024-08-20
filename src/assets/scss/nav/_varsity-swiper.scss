@@ -1,0 +1,55 @@
+.swiper {
+    grid-area: swiper;
+    width: 100%; /* Ensure it doesn’t exceed the layout’s width */
+    margin: 0px 60px;
+}
+
+.swiper-slide {
+    width: 320px;
+    border-left: 1px gray solid;
+}
+
+.swiper-slide {
+    :last-of-type {
+        border-right: 1px gray
+    }
+}
+
+.varsity-slide {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.varsity-slide-teams {
+    justify-content: flex-end;
+    margin-top: auto;
+    font-weight: bold;
+
+    .team-container:last-of-type {
+        margin-bottom: 7px;
+    }
+}
+
+.varsity-slide-date {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-logo {
+    height: 15px;
+    margin: 0px 10px;
+}
+
+.team-name {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
