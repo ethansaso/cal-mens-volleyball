@@ -3,7 +3,7 @@ import players from '../../data/players.json';
 
 const Roster = () => {
     return (
-        <div className="roster">
+        <div className="roster main">
             {Object.keys(players).map((filename) => {
                 const imagePath = require(`../../assets/img/players/${filename}`);
 
@@ -12,9 +12,9 @@ const Roster = () => {
                         <img className="player-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
                         {console.log(imagePath)}
                         <div className="player-details">
-                            <p>{players[filename].position}</p>
-                            <h4>{players[filename].name}</h4>
-                            <h6 style={{marginTop: 'auto'}}>{players[filename].year}</h6>
+                            <p className="player-position">{players[filename].position}</p>
+                            <h4 className="player-name">{players[filename].name}</h4>
+                            <h6 className="player-year">{players[filename].year}</h6>
                         </div>
                     </Card>
                 );

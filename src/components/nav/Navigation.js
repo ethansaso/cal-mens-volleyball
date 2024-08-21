@@ -35,40 +35,37 @@ function Example(args) {
   }, []);
 
   return (
-    <div>
-      <Navbar
-        expand="md"
-        color="dark"
-        dark
-        className={isSticky ? "sticky" : ""}
-      >
-        <NavbarBrand href="/" style={{ padding: 0, height: '100%', display: 'flex' }}>
-            <img src={CalLogo} alt="Cal Logo" style={{height: '40px', width: 'auto'}}/>
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/schedule">
-                Schedule
+    <Navbar
+      expand="md"
+      color="dark"
+      dark
+    >
+      <NavbarBrand href="/" style={{ padding: 0, height: '100%', display: 'flex' }}>
+          <img className="cal-logo" src={CalLogo} alt="Cal Logo" />
+      </NavbarBrand>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="me-auto" navbar>
+          <NavItem>
+            <NavLink href="/schedule">
+              Schedule
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/roster">
+              Roster
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <Nav>
+          <NavItem>
+              <NavLink href='/about'>
+                  About
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/roster">
-                Roster
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <Nav>
-            <NavItem>
-                <NavLink href='/about'>
-                    About
-                </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 }
 

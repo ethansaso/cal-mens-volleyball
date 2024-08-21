@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalLogo from "../../assets/img/cal-logo.png"
 
 const Home = () => {
@@ -5,11 +6,21 @@ const Home = () => {
       <div className="home">
         <div className="home-title-banner">
           <div className="home-title-content">
-            <h1>CAL MEN'S</h1>
-            <h1>VOLLEYBALL</h1>
+            <div className="home-title-logo">
+              <img className="home-title-image" src={CalLogo} alt="logo" />
+              <h1 className="home-title-text">MEN'S VOLLEYBALL</h1>
+            </div>
+            <div className="icon-container">
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
+            </div>
           </div>
         </div>
-        <div className="home-content">
+        <div className="home-content main">
           <h4>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
