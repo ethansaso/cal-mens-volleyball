@@ -15,7 +15,7 @@ function App() {
     const path = window.location.hash.substring(1); // Extract the path from the hash
 
     if (path && path !== '/') {
-      navigate(path);
+      navigate(path, { replace: true });
     }
   }, [navigate]);
 
@@ -38,7 +38,7 @@ function App() {
 
 function AppWrapper() {
   return (
-    <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '/'}>
+    <Router basename={process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball" : '/'}>
       <App />
     </Router>
   );
