@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -15,24 +15,6 @@ function Example(args) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-
-  // For fixing navbar to top of screen upon scroll
-  const [isSticky, setIsSticky] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY >= 100) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <Navbar
