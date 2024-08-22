@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.f855e6bc.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.e6fc87aa.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.9fbabd03.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.0af66721.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
-    "static/media/logo.svg": "/cal-mens-volleyball/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Glory of Justice.otf": "/cal-mens-volleyball/static/media/Glory of Justice.d1d972d6c3c4b5ab6530.otf",
+    "static/media/jgarlepp copy 2.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy 2.54c8b2cd7198e1b1c7fe.jpg",
+    "static/media/jgarlepp copy 3.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy 3.54c8b2cd7198e1b1c7fe.jpg",
+    "static/media/jgarlepp copy.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy.54c8b2cd7198e1b1c7fe.jpg",
+    "static/media/jgarlepp.jpg": "/cal-mens-volleyball/static/media/jgarlepp.54c8b2cd7198e1b1c7fe.jpg",
+    "static/media/Blockletter.otf": "/cal-mens-volleyball/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
+    "static/media/cal-logo.png": "/cal-mens-volleyball/static/media/cal-logo.969ea4d29302ab6d47b4.png",
+    "static/media/home-banner.png": "/cal-mens-volleyball/static/media/home-banner.e0fd64505daed878bf2d.png",
     "index.html": "/cal-mens-volleyball/index.html",
-    "main.f855e6bc.css.map": "/cal-mens-volleyball/static/css/main.f855e6bc.css.map",
-    "main.e6fc87aa.js.map": "/cal-mens-volleyball/static/js/main.e6fc87aa.js.map",
+    "main.9fbabd03.css.map": "/cal-mens-volleyball/static/css/main.9fbabd03.css.map",
+    "main.0af66721.js.map": "/cal-mens-volleyball/static/js/main.0af66721.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e6fc87aa.js"
+    "static/css/main.9fbabd03.css",
+    "static/js/main.0af66721.js"
   ]
 }
