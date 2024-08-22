@@ -8,6 +8,8 @@ import Roster from "./components/pages/Roster";
 import Schedule from "./components/pages/Schedule";
 import './App.css';
 
+const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
+
 function App() {
   const navigate = useNavigate();
 
@@ -25,10 +27,10 @@ function App() {
       <Navigation />
       <div className="content">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/roster" element={<Roster />} />
-          <Route path="/schedule" element={<Schedule />} />
+          <Route exact path={"/"} element={<Home />} />
+          <Route path={"about"} element={<About />} />
+          <Route path={"roster"} element={<Roster />} />
+          <Route path={"schedule"} element={<Schedule />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>
@@ -38,7 +40,7 @@ function App() {
 
 function AppWrapper() {
   return (
-    <Router basename={process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball" : '/'}>
+    <Router basename={path_prefix}>
       <App />
     </Router>
   );

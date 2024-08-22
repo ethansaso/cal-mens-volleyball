@@ -10,7 +10,9 @@ import {
 } from 'reactstrap';
 import CalLogo from "../../assets/img/cal-logo.png"
 
-function Example(args) {
+const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
+
+function Navigation(args) {
   // For collapsible navbar
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,19 +31,19 @@ function Example(args) {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <NavLink href="/cal-mens-volleyball/schedule">
-              Schedule
+            <NavLink href={path_prefix + "schedule"}>
+              Game Schedule
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/cal-mens-volleyball/roster">
-              Roster
+            <NavLink href={path_prefix + "roster"}>
+              Meet the Team
             </NavLink>
           </NavItem>
         </Nav>
         <Nav>
           <NavItem>
-              <NavLink href='/cal-mens-volleyball/about'>
+              <NavLink href={path_prefix + "about"}>
                   About
               </NavLink>
           </NavItem>
@@ -51,4 +53,4 @@ function Example(args) {
   );
 }
 
-export default Example;
+export default Navigation;
