@@ -19,10 +19,6 @@ const Home = () => {
               <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
               <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
               <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
-              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
-              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
-              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
-              <FontAwesomeIcon icon="fa-solid fa-volleyball" fixedWidth />
             </div>
           </div>
         </div>
