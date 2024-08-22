@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
   <script type="text/javascript">
-    // Get the current path and redirect to it on the main page with a hash
-    var path = window.location.pathname + window.location.search;
-    window.location.replace('/#' + path);
+    // Redirect to the app with the correct hash
+    var path = window.location.pathname.replace('/cal-mens-volleyball', '') + window.location.search;
+    window.location.replace('/cal-mens-volleyball/#' + path);
   </script>
 </head>
 <body>
+  <p>Redirecting...</p>
 </body>
 </html>
