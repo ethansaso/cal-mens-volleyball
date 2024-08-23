@@ -1,8 +1,8 @@
-$vb-speed-mult: 1.7;
+$vb-speed-mult: 2;
 $vb-size: 60px;
-$vb-dist-mult-overall: 1.2;
-$vb-start-delay: 0.1s;
-$vb-fade-duration: 1s;
+$vb-dist-mult-overall: 1.25;
+$vb-start-delay: 0s;
+$vb-fade-duration: 0.8s;
 
 $vb1-speed: 1.2s;
 $vb2-speed: 1s;
@@ -34,29 +34,25 @@ $vb8-size-mult: 0.9;
 .home-title-banner {
     position: relative;
     width: 100%;
-    height: 650px; /* Fixed height for the banner */
+    height: 750px; /* Fixed height for the banner */
     overflow: hidden; /* Hide any overflow as the image shrinks */
-}
-
-.home-title-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 400px;
+    max-height: calc(100vh - 166px);
+
     background-image: url(../../img/home-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom; /* Keep the bottom of the image fixed */
     transform-origin: bottom; /* Anchor scaling to the bottom */
     transform: scaleY(calc(100vw / 1920)); /* Shrink image based on screen width */
+
 }
 
 .home-title-content {
+    position: relative;
     font-family: "Blockletter";
     width: 100%;
-    position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the content both horizontally and vertically */
@@ -68,7 +64,7 @@ $vb8-size-mult: 0.9;
 }
 
 .home-title-logo {
-    animation: fade-in 1s ease-out, grow-shrink 1s;
+    animation: fade-in 1s ease-out, grow-shrink 0.8s;
     margin-bottom: 30px;
 
     > img {
@@ -87,7 +83,7 @@ $vb8-size-mult: 0.9;
 .icon-container {
     position: absolute;
     top: 0px;
-    left: 10px;
+    left: 20px;
     width: 100%;
     height: 100%; /* Occupies the full height of the parent */
     display: flex;
@@ -110,94 +106,94 @@ $vb8-size-mult: 0.9;
     //color: #f00;
     animation: 
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb1-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb1-speed * 4 / $vb-speed-mult) linear calc($vb1-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(-175px * $vb1-dist-mult * $vb-dist-mult-overall + 25px * $vb1-size-mult) calc(20px * $vb1-size-mult);
+        fly-out-rotate calc($vb1-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb1-speed * 6 / $vb-speed-mult) linear calc($vb1-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(-175px * $vb1-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb1-size-mult) calc(20px * $vb1-size-mult);
 }
 
 .fa-volleyball:nth-child(2) {
-    --x: #{88px * $vb2-dist-mult * $vb-dist-mult-overall};
-    --y: #{152px * $vb2-dist-mult * $vb-dist-mult-overall};
+    --x: #{124px * $vb2-dist-mult * $vb-dist-mult-overall};
+    --y: #{124px * $vb2-dist-mult * $vb-dist-mult-overall};
     font-size: $vb-size * $vb2-size-mult;
     //color: #f90;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb2-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb2-speed * 4 / $vb-speed-mult) linear calc($vb2-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(-88px * $vb2-dist-mult * $vb-dist-mult-overall + 25px * $vb2-size-mult) calc(-152px * $vb2-dist-mult * $vb-dist-mult-overall + 20px * $vb2-size-mult);
+        fly-out-rotate calc($vb2-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb2-speed * 6 / $vb-speed-mult) linear calc($vb2-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(-124px * $vb2-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb2-size-mult) calc(-124px * $vb2-dist-mult * $vb-dist-mult-overall + 20px * $vb2-size-mult);
 }
 
 .fa-volleyball:nth-child(3) {
-    --x: #{-87px * $vb3-dist-mult * $vb-dist-mult-overall};
-    --y: #{151px * $vb3-dist-mult * $vb-dist-mult-overall};
+    --x: #{0 * $vb3-dist-mult * $vb-dist-mult-overall};
+    --y: #{175px * $vb3-dist-mult * $vb-dist-mult-overall};
     font-size: $vb-size * $vb3-size-mult;
     //color: #ff0;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb3-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb3-speed * 4 / $vb-speed-mult) linear calc($vb3-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(87px * $vb3-dist-mult * $vb-dist-mult-overall + 30px * $vb3-size-mult) calc(-151px * $vb3-dist-mult * $vb-dist-mult-overall + 25px * $vb3-size-mult);
+        fly-out-rotate calc($vb3-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb3-speed * 6 / $vb-speed-mult) linear calc($vb3-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(30px * $vb3-size-mult) calc(-175px * $vb3-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb3-size-mult);
 }
 
 .fa-volleyball:nth-child(4) {
-    --x: #{-175px * $vb4-dist-mult * $vb-dist-mult-overall};
-    --y: 0px;
+    --x: #{-124px * $vb4-dist-mult * $vb-dist-mult-overall};
+    --y: 124px;
     font-size: $vb-size * $vb4-size-mult;
     //color: #0f0;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb4-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb4-speed * 4 / $vb-speed-mult) linear calc($vb4-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(175px * $vb4-dist-mult * $vb-dist-mult-overall + 25px * $vb4-size-mult) calc(25px * $vb4-size-mult);
+        fly-out-rotate calc($vb4-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb4-speed * 6 / $vb-speed-mult) linear calc($vb4-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(124px * $vb4-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb4-size-mult) calc(-124px * $vb4-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb4-size-mult);
 }
 
 .fa-volleyball:nth-child(5) {
-    --x: #{-88px * $vb5-dist-mult * $vb-dist-mult-overall};
-    --y: #{-152px * $vb5-dist-mult * $vb-dist-mult-overall};
+    --x: #{-175px * $vb5-dist-mult * $vb-dist-mult-overall};
+    --y: #{0 * $vb5-dist-mult * $vb-dist-mult-overall};
     font-size: $vb-size * $vb5-size-mult;
     //color: #00f;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb5-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb5-speed * 4 / $vb-speed-mult) linear calc($vb5-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(88px * $vb5-dist-mult * $vb-dist-mult-overall + 25px * $vb5-size-mult) calc(152px * $vb5-dist-mult * $vb-dist-mult-overall + 20px * $vb5-size-mult);
+        fly-out-rotate calc($vb5-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb5-speed * 6 / $vb-speed-mult) linear calc($vb5-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(175px * $vb1-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb1-size-mult) calc(20px * $vb1-size-mult);
 }
 
 
 .fa-volleyball:nth-child(6) {
-    --x: #{88px * $vb6-dist-mult * $vb-dist-mult-overall};
-    --y: #{-152px * $vb6-dist-mult * $vb-dist-mult-overall};
+    --x: #{-124px * $vb6-dist-mult * $vb-dist-mult-overall};
+    --y: #{-124px * $vb6-dist-mult * $vb-dist-mult-overall};
     font-size: $vb-size * $vb6-size-mult;
     //color: #f0f;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb6-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb6-speed * 4 / $vb-speed-mult) linear calc($vb6-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(-88px * $vb6-dist-mult * $vb-dist-mult-overall + 25px * $vb6-size-mult) calc(152px * $vb6-dist-mult * $vb-dist-mult-overall + 20px * $vb6-size-mult);
+        fly-out-rotate calc($vb6-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb6-speed * 6 / $vb-speed-mult) linear calc($vb6-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+        transform-origin: calc(124px * $vb2-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb2-size-mult) calc(124px * $vb2-dist-mult * $vb-dist-mult-overall + 20px * $vb2-size-mult);
 }
 
 .fa-volleyball:nth-child(7) {
     --x: 0;
-    --y: #{175px * $vb7-dist-mult * $vb-dist-mult-overall};
+    --y: #{-175px * $vb7-dist-mult * $vb-dist-mult-overall};
     font-size: #{$vb-size * $vb7-size-mult};
     //color: #f00;
     animation: 
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb7-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb7-speed * 4 / $vb-speed-mult) linear calc($vb7-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(20px * $vb7-size-mult) calc(-175px * $vb7-dist-mult * $vb-dist-mult-overall + 25px * $vb7-size-mult);
+        fly-out-rotate calc($vb7-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb7-speed * 6 / $vb-speed-mult) linear calc($vb7-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+    transform-origin: calc(20px * $vb7-size-mult) calc(175px * $vb7-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb7-size-mult);
 }
 
 .fa-volleyball:nth-child(8) {
-    --x: 0px;
-    --y: #{-175px * $vb8-dist-mult * $vb-dist-mult-overall};
+    --x: 124px;
+    --y: #{-124px * $vb8-dist-mult * $vb-dist-mult-overall};
     font-size: $vb-size * $vb8-size-mult;
     //color: #0f0;
     animation:
         fade-in-transparent $vb-fade-duration ease-out $vb-start-delay forwards,
-        fly-out-rotate calc($vb8-speed * 2 / $vb-speed-mult) linear $vb-start-delay forwards,
-        continuous-rotate calc($vb8-speed * 4 / $vb-speed-mult) linear calc($vb8-speed * 2 / $vb-speed-mult + $vb-start-delay) infinite;
-    transform-origin: calc(25px * $vb8-size-mult) calc(175px * $vb8-dist-mult * $vb-dist-mult-overall + 25px * $vb8-size-mult);
+        fly-out-rotate calc($vb8-speed * 1.5 / $vb-speed-mult) linear $vb-start-delay forwards,
+        continuous-rotate calc($vb8-speed * 6 / $vb-speed-mult) linear calc($vb8-speed * 1.5 / $vb-speed-mult + $vb-start-delay) infinite;
+        transform-origin: calc(-124px * $vb2-dist-mult * $vb-dist-mult-overall + $vb-size / 2 * $vb2-size-mult) calc(124px * $vb2-dist-mult * $vb-dist-mult-overall + 20px * $vb2-size-mult);
 }
 
 @keyframes fade-in {
@@ -213,6 +209,9 @@ $vb8-size-mult: 0.9;
 @keyframes fade-in-transparent {
     0% {
         opacity: 0;
+    }
+    75% {
+        opacity: 0.7;
     }
     100% {
         opacity: 0.6;
@@ -236,16 +235,16 @@ $vb8-size-mult: 0.9;
         transform: translate(center, center) scale(0) rotate(0deg);
     }
     100% {
-        transform: translate(var(--x), var(--y)) scale(1) rotate(180deg);
+        transform: translate(var(--x), var(--y)) scale(1) rotate(135deg);
     }
 }
 
 @keyframes continuous-rotate {
     0% {
-        transform: translate(var(--x), var(--y)) rotate(180deg);
+        transform: translate(var(--x), var(--y)) rotate(135deg);
     }
     100% {
-        transform: translate(var(--x), var(--y)) rotate(540deg);
+        transform: translate(var(--x), var(--y)) rotate(495deg);
     }
 }
 

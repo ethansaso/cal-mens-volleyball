@@ -2,25 +2,21 @@
     "jgarlepp.jpg": {
         "name": "Justin Garlepp",
         "number": 1,
-        "position": "Center",
+        "positions": ["Center"],
         "year": "Super-senior"
     },
     "jgarlepp copy.jpg": {
         "name": "Gustin Jarlepp",
         "number": 2,
-        "position": "Setter",
+        "positions": ["Setter", "Center"],
         "year": "Freshman"
     },
     "jgarlepp copy 2.jpg": {
-        "name": "J Gar",
-        "number": 3,
-        "position": "Outside Hitter",
-        "year": "Sophomore"
     },
     "jgarlepp copy 3.jpg": {
         "name": "Garp",
         "number": 4,
-        "position": "Coach",
+        "positions": ["Coach"],
         "year": "Professor emeritus"
     }
 }

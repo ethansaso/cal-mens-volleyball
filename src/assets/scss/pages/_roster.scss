@@ -1,26 +1,32 @@
-.player-card {
+.team-member-card {
+    height: 300px;
     display: flex;
     flex-direction: row;
-    height: 300px;
-    padding: 20px;
-    margin: 20px;
+    padding: 0;
+    margin: 20px 0px;
 }
 
-.player-details {
+.team-member-img {
+    height: 100%;
+    width: auto;
+    border-radius: var(--bs-card-inner-border-radius) 0px 0px var(--bs-card-inner-border-radius);
+}
+
+.team-member-details {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.player-position {
+.team-member-positions {
     display: block;
 }
 
-.player-name {
+.team-member-name {
     display: block;
 }
 
-.player-year {
+.team-member-year {
     font-weight: bold;
     margin-top: auto;
     margin-bottom: 0;

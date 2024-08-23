@@ -7,6 +7,10 @@ import {
   Nav,
   NavItem,
   NavLink,
+  DropdownToggle,
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import CalLogo from "../../assets/img/cal-logo.png"
 
@@ -24,7 +28,7 @@ function Navigation(args) {
       color="dark"
       dark
     >
-      <NavbarBrand href="/cal-mens-volleyball" style={{ padding: 0, height: '100%', display: 'flex' }}>
+      <NavbarBrand href={path_prefix} style={{ padding: 0, height: '100%', display: 'flex' }}>
           <img className="cal-logo" src={CalLogo} alt="Cal Logo" />
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
@@ -42,6 +46,28 @@ function Navigation(args) {
           </NavItem>
         </Nav>
         <Nav>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle
+            nav caret
+            id="dropdownMenuButton"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+            >
+              Options
+            </DropdownToggle>
+            <DropdownMenu className="navbar-dropdown" aria-labelledby='optionsDropdownButton'>
+              <DropdownItem>
+                <NavLink href="https://www.instagram.com/calclubvolleyball" style={{paddingLeft: '0 !important'}}>
+                  Instagram
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem>
+                <NavLink href="https://www.facebook.com/calclubvball/">
+                  Facebook
+                </NavLink>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
           <NavItem>
               <NavLink href={path_prefix + "about"}>
                   About
