@@ -5,9 +5,9 @@ import { useEffect, useMemo, useState } from "react";
 import TeamMemberSearchBar from "../baubles/TeamMemberSearchBar";
 
 const Roster = () => {
-    const [teamMemberName, setTeamMemberName] = useState('');
-    const [teamMemberPosition, setTeamMemberPosition] = useState('All');
-    const [teamMemberYear, setTeamMemberYear] = useState('All');
+    const [searchedTeamMemberName, setSearchedTeamMemberName] = useState('');
+    const [selectedTeamMemberPosition, setSelectedTeamMemberPosition] = useState('All');
+    const [selectedTeamMemberYear, setSelectedTeamMemberYear] = useState('All');
 
     const [filteredPlayers, setFilteredPlayers] = useState('');
     const [staffMembers, setStaffMembers] = useState('');
@@ -21,10 +21,10 @@ const Roster = () => {
             console.log(ignoredPositions);
             // TODO: players with missing positions should end up in recruits
             return (
-                (teamMemberName === '' || teamMember.name.toLowerCase().includes(teamMemberName.toLowerCase())) &&
+                (searchedTeamMemberName === '' || (teamMember.name?.toLowerCase().includes(searchedTeamMemberName.toLowerCase()) ?? false)) &&
                 (!teamMember.positions?.every(position => ignoredPositions.includes(position.toLowerCase())) ?? true) &&
-                (teamMemberPosition === 'All' || teamMember.positions.includes(teamMemberPosition)) &&
-                (teamMemberYear === 'All' || teamMember.year === teamMemberYear)
+                (selectedTeamMemberPosition === 'All' || (teamMember.positions?.includes(selectedTeamMemberPosition) ?? false)) &&
+                (selectedTeamMemberYear === 'All' || teamMember.year === selectedTeamMemberYear)
             );
         }).reduce((acc, key) => {
             acc[key] = teamMembers[key];
@@ -41,12 +41,12 @@ const Roster = () => {
     
         setFilteredPlayers(filtered);
         setStaffMembers(staff);
-    }, [teamMemberName, teamMemberPosition, teamMemberYear, ignoredPositions]);
+    }, [searchedTeamMemberName, selectedTeamMemberPosition, selectedTeamMemberYear, ignoredPositions]);
 
     const handleSearch = (name, position, year) => {
-        setTeamMemberName(name);
-        setTeamMemberPosition(position);
-        setTeamMemberYear(year);
+        setSearchedTeamMemberName(name);
+        setSelectedTeamMemberPosition(position);
+        setSelectedTeamMemberYear(year);
     };
 
     return (
