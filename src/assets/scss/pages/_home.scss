@@ -35,7 +35,6 @@ $vb8-size-mult: 0.9;
     position: relative;
     width: 100%;
     height: 750px; /* Fixed height for the banner */
-    overflow: hidden; /* Hide any overflow as the image shrinks */
     width: 100%;
     min-height: 400px;
     max-height: calc(100vh - 166px);
@@ -46,7 +45,6 @@ $vb8-size-mult: 0.9;
     background-position: bottom; /* Keep the bottom of the image fixed */
     transform-origin: bottom; /* Anchor scaling to the bottom */
     transform: scaleY(calc(100vw / 1920)); /* Shrink image based on screen width */
-
 }
 
 .home-title-content {
@@ -92,6 +90,7 @@ $vb8-size-mult: 0.9;
 }
 
 .fa-volleyball {
+    z-index: 99999;
     opacity: 0%;
     position: absolute;
     font-size: 40px; /* Adjust the size of the icons as needed */

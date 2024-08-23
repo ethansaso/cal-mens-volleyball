@@ -17,7 +17,14 @@
 }
 
 .main {
-  padding: 50px 200px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 50px 25px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    padding: 50px 200px;
+  }
 }
 
 @font-face {

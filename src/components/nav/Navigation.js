@@ -53,7 +53,7 @@ function Navigation(args) {
             data-mdb-toggle="dropdown"
             aria-expanded="false"
             >
-              Options
+              More
             </DropdownToggle>
             <DropdownMenu className="navbar-dropdown" aria-labelledby='optionsDropdownButton'>
               <DropdownItem>
@@ -64,6 +64,11 @@ function Navigation(args) {
               <DropdownItem>
                 <NavLink href="https://www.facebook.com/calclubvball/">
                   Facebook
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem>
+                <NavLink href="https://recwell.berkeley.edu/competitive-programs/sport-clubs/volleyball-mens/">
+                  Recwell
                 </NavLink>
               </DropdownItem>
             </DropdownMenu>
