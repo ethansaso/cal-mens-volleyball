@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.3b6612db.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.29fa222f.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.27ca85ba.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.4734b5dc.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
     "static/media/Glory of Justice.otf": "/cal-mens-volleyball/static/media/Glory of Justice.d1d972d6c3c4b5ab6530.otf",
     "static/media/jgarlepp copy 2.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy 2.54c8b2cd7198e1b1c7fe.jpg",
@@ -12,12 +12,12 @@
     "static/media/cal-logo.png": "/cal-mens-volleyball/static/media/cal-logo.969ea4d29302ab6d47b4.png",
     "static/media/home-banner.png": "/cal-mens-volleyball/static/media/home-banner.e0fd64505daed878bf2d.png",
     "index.html": "/cal-mens-volleyball/index.html",
-    "main.3b6612db.css.map": "/cal-mens-volleyball/static/css/main.3b6612db.css.map",
-    "main.29fa222f.js.map": "/cal-mens-volleyball/static/js/main.29fa222f.js.map",
+    "main.27ca85ba.css.map": "/cal-mens-volleyball/static/css/main.27ca85ba.css.map",
+    "main.4734b5dc.js.map": "/cal-mens-volleyball/static/js/main.4734b5dc.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b6612db.css",
-    "static/js/main.29fa222f.js"
+    "static/css/main.27ca85ba.css",
+    "static/js/main.4734b5dc.js"
   ]
 }
