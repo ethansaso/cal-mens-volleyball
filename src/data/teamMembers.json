@@ -2,14 +2,20 @@
     "jgarlepp.jpg": {
         "name": "Justin Garlepp",
         "number": 1,
-        "positions": ["Center"],
-        "year": "Super-senior"
+        "positions": ["Middle"],
+        "year": "Graduate student",
+        "height": "6'3\"",
+        "hometown": "Sunnyvale",
+        "highschool": "Bellarmine College Preparatory"
     },
     "jgarlepp copy.jpg": {
         "name": "Gustin Jarlepp",
         "number": 2,
-        "positions": ["Setter", "Center"],
-        "year": "Freshman"
+        "positions": ["Setter", "Middle"],
+        "year": "Freshman",
+        "height": "5'11\"",
+        "hometown": "Huntington Beach",
+        "highschool": "Ida Fischer"
     },
     "jgarlepp copy 2.jpg": {
     },

@@ -64,8 +64,22 @@ const Roster = () => {
                         <Card className="team-member-card" key={filename}>
                             <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
                             <CardBody className="team-member-details">
-                                <p className="team-member-positions">{teamMembers[filename].positions?.join(' / ') ?? 'Position unknown -- please contact staff'}</p>
-                                <h4 className="team-member-name">{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h4>
+                                <div className="team-member-left">
+                                    <div className="team-member-primary">
+                                        <div className="team-member-text">
+                                            <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
+                                            <p style={{marginLeft: '5px', marginBottom: 0}}>{teamMembers[filename].height ? " | " + teamMembers[filename].height : ""}</p>
+                                        </div>
+                                        <div className="team-member-text">
+                                            <h2 className="roster-number">{teamMembers[filename].number}</h2>
+                                            <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
+                                        </div>
+                                    </div>
+                                    <div className="team-member-personal">
+                                        <p className="team-member-text">{teamMembers[filename].hometown}</p>
+                                        <p className="team-member-text" style={{marginBottom: 0}}>{teamMembers[filename].highschool}</p>
+                                    </div>
+                                </div>
                                 <h6 className="team-member-year">{teamMembers[filename].year ?? 'Year unknown -- please contact staff'}</h6>
                             </CardBody>
                         </Card>
