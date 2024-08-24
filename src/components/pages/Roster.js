@@ -12,13 +12,11 @@ const Roster = () => {
     const [filteredPlayers, setFilteredPlayers] = useState('');
     const [staffMembers, setStaffMembers] = useState('');
 
-    const ignoredPositions = useMemo(() => ['coach', 'photographer'], []);
+    const ignoredPositions = useMemo(() => ['coach', 'head coach', 'photographer'], []);
 
     useEffect(() => {
         const filtered = Object.keys(teamMembers).filter((key) => {
             const teamMember = teamMembers[key];
-            console.log(teamMember);
-            console.log(ignoredPositions);
             // TODO: players with missing positions should end up in recruits
             return (
                 (searchedTeamMemberName === '' || (teamMember.name?.toLowerCase().includes(searchedTeamMemberName.toLowerCase()) ?? false)) &&
@@ -26,6 +24,11 @@ const Roster = () => {
                 (selectedTeamMemberPosition === 'All' || (teamMember.positions?.includes(selectedTeamMemberPosition) ?? false)) &&
                 (selectedTeamMemberYear === 'All' || teamMember.year === selectedTeamMemberYear)
             );
+        });
+
+        // Sort the filtered players by their number
+        const sortedFiltered = filtered.sort((a, b) => {
+            return (teamMembers[a].number ?? 0) - (teamMembers[b].number ?? 0);
         }).reduce((acc, key) => {
             acc[key] = teamMembers[key];
             return acc;
@@ -39,7 +42,7 @@ const Roster = () => {
             return acc;
         }, {});
     
-        setFilteredPlayers(filtered);
+        setFilteredPlayers(sortedFiltered);
         setStaffMembers(staff);
     }, [searchedTeamMemberName, selectedTeamMemberPosition, selectedTeamMemberYear, ignoredPositions]);
 
@@ -54,8 +57,6 @@ const Roster = () => {
             <h1>Players</h1>
             <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
             <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>
-
-            <div className=""></div>
             {Object.keys(filteredPlayers).map((filename) => {
                 const imagePath = require(`../../assets/img/team-members/${filename}`);
 
@@ -95,8 +96,16 @@ const Roster = () => {
                         <Card className="team-member-card" key={filename}>
                             <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
                             <CardBody className="team-member-details">
-                                <p className="team-member-positions">{teamMembers[filename].positions.join(' / ')}</p>
-                                <h4 className="team-member-name">{teamMembers[filename].name}</h4>
+                                <div className="team-member-left">
+                                    <div className="team-member-primary">
+                                        <div className="team-member-text">
+                                            <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
+                                        </div>
+                                        <div className="team-member-text">
+                                            <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
+                                        </div>
+                                    </div>
+                                </div>
                             </CardBody>
                         </Card>
                     </Reveal>

@@ -46,27 +46,28 @@ function Navigation(args) {
           </NavItem>
         </Nav>
         <Nav>
-          <UncontrolledDropdown nav inNavbar>
+          <UncontrolledDropdown nav inNavbar className="navbar-dropdown">
             <DropdownToggle
             nav caret
             id="dropdownMenuButton"
             data-mdb-toggle="dropdown"
             aria-expanded="false"
+            className="ooga"
             >
               More
             </DropdownToggle>
-            <DropdownMenu className="navbar-dropdown" aria-labelledby='optionsDropdownButton'>
-              <DropdownItem>
+            <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
+              <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://www.instagram.com/calclubvolleyball" style={{paddingLeft: '0 !important'}}>
                   Instagram
                 </NavLink>
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://www.facebook.com/calclubvball/">
                   Facebook
                 </NavLink>
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://recwell.berkeley.edu/competitive-programs/sport-clubs/volleyball-mens/">
                   Recwell
                 </NavLink>

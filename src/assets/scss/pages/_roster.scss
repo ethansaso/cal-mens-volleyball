@@ -7,8 +7,10 @@
 }
 
 .team-member-img {
+    object-fit: cover;
+    object-position: 50% 0;
     height: 100%;
-    width: auto;
+    width: 200px;
     border-radius: var(--bs-card-inner-border-radius) 0px 0px var(--bs-card-inner-border-radius);
 }
 
@@ -50,4 +52,8 @@
     text-align: center;
     background-color: #041e42;
     color: $cal-gold-color;
+}
+
+.search-result-count {
+    margin-top: -5px;
 }

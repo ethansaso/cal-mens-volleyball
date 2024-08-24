@@ -39,12 +39,12 @@
     text-shadow: 2px 2px 4px black;
 }
 
-.dropdown:hover .dropdown-menu {
+.navbar-dropdown:hover .navbar-dropdown-menu {
     display: block;
     margin-top: 0; /* Optional: Adjust this to avoid any spacing issues */
   }
 
-.dropdown-menu {
+.navbar-dropdown-menu {
     font-family: "Blockletter";
     transform: scaleY(1.1);
     font-size: 1.7rem;
@@ -54,7 +54,7 @@
     background-color: #041e42;
 }
 
-.dropdown-item {
+.navbar-dropdown-item {
     padding: 8px 14px;
     color: #fff !important;
     display: flex;

@@ -1,28 +1,131 @@
 {
-    "jgarlepp.jpg": {
+    "justin-garlepp.jpg": {
         "name": "Justin Garlepp",
-        "number": 1,
+        "number": 10,
         "positions": ["Middle"],
-        "year": "Graduate student",
+        "year": "Graduate Student",
         "height": "6'3\"",
-        "hometown": "Sunnyvale",
+        "hometown": "Sunnyvale, CA",
         "highschool": "Bellarmine College Preparatory"
     },
-    "jgarlepp copy.jpg": {
-        "name": "Gustin Jarlepp",
-        "number": 2,
-        "positions": ["Setter", "Middle"],
+    "joshua-rosen.jpg": {
+        "name": "Joshua Rosen",
+        "number": 24,
+        "positions": ["Setter"],
+        "year": "Junior",
+        "height": "6'4\"",
+        "hometown": "Port Washington, NY"
+    },
+    "joshua-so.jpg": {
+        "name": "Joshua So",
+        "number": 21,
+        "positions": ["Opposite Hitter"],
+        "year": "Junior",
+        "height": "6'3\"",
+        "hometown": "Cerritos, CA"
+    },
+    "brennan-morgan.jpg": {
+        "name": "Brennan Morgan",
+        "number": 11,
+        "positions": ["Middle"],
+        "year": "Junior",
+        "height": "6'6\"",
+        "hometown": "Manhattan Beach, CA"
+    },
+    "bryce-lowery.jpg": {
+        "name": "Bryce Lowery",
+        "number": 16,
+        "positions": ["Setter"],
+        "year": "Junior",
+        "height": "5'9\"",
+        "hometown": "Long Beach, California"
+    },
+    "kyle-deng.jpg": {
+        "name": "Kyle Deng",
+        "number": 14,
+        "positions": ["Outside Hitter"],
         "year": "Freshman",
-        "height": "5'11\"",
-        "hometown": "Huntington Beach",
-        "highschool": "Ida Fischer"
+        "height": "6'0\"",
+        "hometown": "Mountain View, California"
     },
-    "jgarlepp copy 2.jpg": {
+    "ethan-hallick.jpg": {
+        "name": "Ethan Hallick",
+        "number": 7,
+        "positions": ["Setter", "Defensive Specialist"],
+        "year": "Sophomore",
+        "height": "6'2\"",
+        "hometown": "Madison, Wisconsin"
     },
-    "jgarlepp copy 3.jpg": {
-        "name": "Garp",
-        "number": 4,
-        "positions": ["Coach"],
-        "year": "Professor emeritus"
+    "nick-demaerschalk.jpg": {
+        "name": "Nick Demaerschalk",
+        "number": 2,
+        "positions": ["Middle"],
+        "year": "Sophomore",
+        "height": "6'6\"",
+        "hometown": "Scottsdale, Arizona"
+    },
+    "leonard-yu.jpg": {
+        "name": "Leonard Yu",
+        "number": 3,
+        "positions": ["Outside Hitter"],
+        "year": "Senior",
+        "height": "6'2\"",
+        "hometown": "Irvine, CA"
+    },
+    "justin-hong.jpg": {
+        "name": "Justin Hong",
+        "number": 5,
+        "positions": ["Outside Hitter"],
+        "year": "Junior",
+        "height": "6'0\"",
+        "hometown": "Basking Ridge, New Jersey"
+    },
+    "owen-ye.jpg": {
+        "name": "Owen Ye",
+        "number": 23,
+        "positions": ["Opposite Hitter", "Outside Hitter"],
+        "year": "Sophomore",
+        "height": "6'4\"",
+        "hometown": "Thousand Oaks, California"
+    },
+    "zack-ferry.jpg": {
+        "name": "Zack Ferry",
+        "number": 20,
+        "positions": ["Opposite Hitter"],
+        "year": "Junior",
+        "height": "6'5\"",
+        "hometown": "Pasadena, CA"
+    },
+    "sudhit-rao.jpg": {
+        "name": "Sudhit Rao",
+        "number": 9,
+        "positions": ["Libero"],
+        "year": "Sophomore",
+        "height": "5'7\"",
+        "hometown": "Cupertino, CA"
+    },
+    "evan-passalacqua.jpg": {
+        "name": "Evan Passalacqua",
+        "number": 99,
+        "positions": ["Opposite Hitter", "Middle"],
+        "year": "Sophomore",
+        "height": "6'5\"",
+        "hometown": "Palo Alto, California"
+    },
+    "silas-taylor.jpg": {
+        "name": "Silas Taylor",
+        "number": 12,
+        "positions": ["Setter"],
+        "year": "Sophomore",
+        "height": "6'0\"",
+        "hometown": "Mountain View, California"
+    },
+    "korte-lee.png": {
+        "name": "Korte Lee",
+        "positions": ["Photographer"]
+    },
+    "dan-hurley.jpg": {
+        "name": "Dan Hurley",
+        "positions": ["Head Coach"]
     }
 }
