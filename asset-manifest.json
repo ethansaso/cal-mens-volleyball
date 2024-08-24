@@ -1,23 +1,36 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.27ca85ba.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.4734b5dc.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.aa6aeb2f.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.c4dca9bb.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
+    "static/media/korte-lee.png": "/cal-mens-volleyball/static/media/korte-lee.4d5dd9186bd461bb1581.png",
+    "static/media/joshua-so.jpg": "/cal-mens-volleyball/static/media/joshua-so.842cbeaa279f2739e850.jpg",
+    "static/media/joshua-rosen.jpg": "/cal-mens-volleyball/static/media/joshua-rosen.512b47165b3f1530977d.jpg",
+    "static/media/bryce-lowery.jpg": "/cal-mens-volleyball/static/media/bryce-lowery.62d0bf9a036e1d110665.jpg",
+    "static/media/owen-ye.jpg": "/cal-mens-volleyball/static/media/owen-ye.c3453d558064d615c36c.jpg",
+    "static/media/leonard-yu.jpg": "/cal-mens-volleyball/static/media/leonard-yu.81fd7671a4ec2bff9baa.jpg",
+    "static/media/evan-passalacqua.jpg": "/cal-mens-volleyball/static/media/evan-passalacqua.b3178c5315d8076d29b1.jpg",
+    "static/media/justin-garlepp.jpg": "/cal-mens-volleyball/static/media/justin-garlepp.10cc9f68c53bf5d19af0.jpg",
+    "static/media/nick-demaerschalk.jpg": "/cal-mens-volleyball/static/media/nick-demaerschalk.84777fe5c9e766629b90.jpg",
+    "static/media/dan-hurley.jpg": "/cal-mens-volleyball/static/media/dan-hurley.3a7690270a90f2a37714.jpg",
+    "static/media/zack-ferry.jpg": "/cal-mens-volleyball/static/media/zack-ferry.ce308c3d58e1c4b2b780.jpg",
+    "static/media/silas-taylor.jpg": "/cal-mens-volleyball/static/media/silas-taylor.007b950d904089149674.jpg",
+    "static/media/ethan-hallick.jpg": "/cal-mens-volleyball/static/media/ethan-hallick.3634e11dfa87681d6813.jpg",
+    "static/media/sudhit-rao.jpg": "/cal-mens-volleyball/static/media/sudhit-rao.fb9d2c0820cb2572e642.jpg",
+    "static/media/kyle-deng.jpg": "/cal-mens-volleyball/static/media/kyle-deng.b773ab02416d9e81c969.jpg",
+    "static/media/justin-hong.jpg": "/cal-mens-volleyball/static/media/justin-hong.875625ed75d17400a0d4.jpg",
     "static/media/Glory of Justice.otf": "/cal-mens-volleyball/static/media/Glory of Justice.d1d972d6c3c4b5ab6530.otf",
-    "static/media/jgarlepp copy 2.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy 2.54c8b2cd7198e1b1c7fe.jpg",
-    "static/media/jgarlepp copy 3.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy 3.54c8b2cd7198e1b1c7fe.jpg",
-    "static/media/jgarlepp copy.jpg": "/cal-mens-volleyball/static/media/jgarlepp copy.54c8b2cd7198e1b1c7fe.jpg",
-    "static/media/jgarlepp.jpg": "/cal-mens-volleyball/static/media/jgarlepp.54c8b2cd7198e1b1c7fe.jpg",
+    "static/media/brennan-morgan.jpg": "/cal-mens-volleyball/static/media/brennan-morgan.c686a3b3b36878ed3ea4.jpg",
     "static/media/Blockletter.otf": "/cal-mens-volleyball/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/cal-logo.png": "/cal-mens-volleyball/static/media/cal-logo.969ea4d29302ab6d47b4.png",
     "static/media/home-banner.png": "/cal-mens-volleyball/static/media/home-banner.e0fd64505daed878bf2d.png",
     "index.html": "/cal-mens-volleyball/index.html",
-    "main.27ca85ba.css.map": "/cal-mens-volleyball/static/css/main.27ca85ba.css.map",
-    "main.4734b5dc.js.map": "/cal-mens-volleyball/static/js/main.4734b5dc.js.map",
+    "main.aa6aeb2f.css.map": "/cal-mens-volleyball/static/css/main.aa6aeb2f.css.map",
+    "main.c4dca9bb.js.map": "/cal-mens-volleyball/static/js/main.c4dca9bb.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27ca85ba.css",
-    "static/js/main.4734b5dc.js"
+    "static/css/main.aa6aeb2f.css",
+    "static/js/main.c4dca9bb.js"
   ]
 }
