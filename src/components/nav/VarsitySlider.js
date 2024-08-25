@@ -9,10 +9,10 @@ import "swiper/css"
 
 const VarsitySwiper = () => {
   const matches = [
-    { homeTeam: "Stanford", visitorTeam: "UC Berkeley", date: "2025-01-29 | 10:00 a.m. PT" },
-    { homeTeam: "UC Berkeley", visitorTeam: "Chico State", date: "2025-02-17 | 10:00 a.m. PT" },
-    { homeTeam: "UC Berkeley", visitorTeam: "Fresno State", date: "2025-02-26 | 10:00 a.m. PT" },
-    { homeTeam: "Santa Clara", visitorTeam: "UC Berkeley", date: "2025-03-07 | 10:00 a.m. PT" },
+    { homeTeam: "Stanford", visitorTeam: "California", date: "2025-01-29 | 10:00 a.m. PT" },
+    { homeTeam: "California", visitorTeam: "Chico State", date: "2025-02-17 | 10:00 a.m. PT" },
+    { homeTeam: "California", visitorTeam: "Fresno State", date: "2025-02-26 | 10:00 a.m. PT" },
+    { homeTeam: "Santa Clara", visitorTeam: "California", date: "2025-03-07 | 10:00 a.m. PT" },
     // Add more matches as needed
   ];
 
@@ -22,7 +22,7 @@ const VarsitySwiper = () => {
     "Fresno State": FresnoLogo,
     "Cal Poly SLO": CPLogo,
     "Santa Clara": SCLogo,
-    "UC Berkeley": CalLogo
+    "California": CalLogo
   }
 
   return (
