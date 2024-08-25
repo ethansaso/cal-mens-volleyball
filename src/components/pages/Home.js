@@ -22,6 +22,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        {/*
         <div className="home-content main">
           <h4>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua.
@@ -30,6 +31,7 @@ const Home = () => {
           sunt in culpa qui officia deserunt mollit anim id est laborum.
           </h4>
         </div>
+        */}
       </div>
     )
 }

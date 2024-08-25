@@ -5,9 +5,9 @@
       "navigation"
       "content";
     grid-template-rows: 100px 66px 1fr;
-    // Thanks to https://medium.com/developer-rants/what-if-height-100vh-is-bigger-than-your-screen-7f39c62ac170
     width: 100%;
     overflow: clip;
+    min-height: 100dvh;
   }
   
 .content {

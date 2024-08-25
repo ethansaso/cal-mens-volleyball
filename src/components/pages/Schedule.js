@@ -10,7 +10,7 @@ const Schedule = () => {
             Schedule page unimplemented
           </p>
           {Object.keys(MatchesJson).map((date, index) => (
-            <p>{index}</p>
+            <p></p>
             // check if date is after current time, don't display if before current time
             // convert date to string
             // print some card that has all sorts of elements

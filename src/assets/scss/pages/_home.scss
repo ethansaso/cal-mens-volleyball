@@ -33,9 +33,9 @@ $vb8-size-mult: 0.9;
 
 .home-title-banner {
     position: relative;
+    overflow: hidden;
     width: 100%;
     height: 750px; /* Fixed height for the banner */
-    width: 100%;
     min-height: 400px;
     max-height: calc(100vh - 166px);
 
@@ -44,7 +44,6 @@ $vb8-size-mult: 0.9;
     background-repeat: no-repeat;
     background-position: bottom; /* Keep the bottom of the image fixed */
     transform-origin: bottom; /* Anchor scaling to the bottom */
-    transform: scaleY(calc(100vw / 1920)); /* Shrink image based on screen width */
 }
 
 .home-title-content {
