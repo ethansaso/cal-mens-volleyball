@@ -4,6 +4,11 @@
     flex-direction: row;
     padding: 0;
     margin: 20px 0px;
+
+    @media (max-width: 767px) {
+        height: auto;
+        align-items: center;
+    }
 }
 
 .team-member-img {
@@ -12,6 +17,13 @@
     height: 100%;
     width: 200px;
     border-radius: var(--bs-card-inner-border-radius) 0px 0px var(--bs-card-inner-border-radius);
+
+    @media (max-width: 767px) {
+        width: auto;
+        height: 110px;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
 }
 
 .team-member-details {
