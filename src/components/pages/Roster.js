@@ -12,7 +12,7 @@ const Roster = () => {
     const [filteredPlayers, setFilteredPlayers] = useState('');
     const [staffMembers, setStaffMembers] = useState('');
 
-    const ignoredPositions = useMemo(() => ['coach', 'head coach', 'photographer'], []);
+    const ignoredPositions = useMemo(() => ['head coach', 'coach', 'photographer'], []);
 
     useEffect(() => {
         const filtered = Object.keys(teamMembers).filter((key) => {
@@ -34,14 +34,19 @@ const Roster = () => {
             return acc;
         }, {});
 
+        // Sort staff by ordering of ignoredPositions (so coaches appear first)
         const staff = Object.keys(teamMembers).filter((key) => {
             const teamMember = teamMembers[key];
             return teamMember.positions?.every(position => ignoredPositions.includes(position.toLowerCase())) ?? false;
+        }).sort((a, b) => {
+            const positionA = teamMembers[a].positions[0].toLowerCase();
+            const positionB = teamMembers[b].positions[0].toLowerCase();
+            return ignoredPositions.indexOf(positionA) - ignoredPositions.indexOf(positionB);
         }).reduce((acc, key) => {
             acc[key] = teamMembers[key];
             return acc;
         }, {});
-    
+        
         setFilteredPlayers(sortedFiltered);
         setStaffMembers(staff);
     }, [searchedTeamMemberName, selectedTeamMemberPosition, selectedTeamMemberYear, ignoredPositions]);
@@ -53,7 +58,7 @@ const Roster = () => {
     };
 
     return (
-        <div className="roster main">
+        <div className="main">
             <h1>Players</h1>
             <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
             <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>

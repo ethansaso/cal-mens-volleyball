@@ -54,7 +54,7 @@ function Navigation(args) {
             aria-expanded="false"
             className="ooga"
             >
-              More
+              Socials
             </DropdownToggle>
             <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
               <DropdownItem className="navbar-dropdown-item">
@@ -74,11 +74,24 @@ function Navigation(args) {
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <NavItem>
-              <NavLink href={path_prefix + "about"}>
+          <UncontrolledDropdown nav inNavbar className="navbar-dropdown">
+            <DropdownToggle
+            nav caret
+            id="dropdownMenuButton"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+            className="ooga"
+            >
+              More
+            </DropdownToggle>
+            <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
+              <DropdownItem className="navbar-dropdown-item">
+                <NavLink href="/about" style={{paddingLeft: '0 !important'}}>
                   About
-              </NavLink>
-          </NavItem>
+                </NavLink>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
         </Nav>
       </Collapse>
     </Navbar>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from "react-router-dom"
-import VarsitySwiper from "./components/nav/VarsitySlider";
+import VarsitySwiper from "./components/nav/VarsitySwiper";
 import Navigation from "./components/nav/Navigation";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";

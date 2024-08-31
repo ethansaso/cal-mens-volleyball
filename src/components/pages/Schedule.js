@@ -3,11 +3,10 @@ import MatchesJson from "../../data/matches.json"
 
 const Schedule = () => {
     return (
-        <div className="App">
-        <header className="App-header">
-          <img src={CalLogo} className="App-logo" alt="logo" />
+        <main className="unimplemented-page">
+          <img src={CalLogo} className="unimplemented-logo" alt="logo" />
           <p>
-            Schedule page unimplemented
+            The schedule hasn't been released for this season--check back soon!
           </p>
           {Object.keys(MatchesJson).map((date, index) => (
             <p></p>
@@ -15,8 +14,7 @@ const Schedule = () => {
             // convert date to string
             // print some card that has all sorts of elements
           ))}
-        </header>
-      </div>
+      </main>
     )
 }
 
