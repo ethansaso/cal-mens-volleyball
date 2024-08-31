@@ -86,7 +86,7 @@ function Navigation(args) {
             </DropdownToggle>
             <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href="/about" style={{paddingLeft: '0 !important'}}>
+                <NavLink href={`${path_prefix}about`} style={{paddingLeft: '0 !important'}}>
                   About
                 </NavLink>
               </DropdownItem>
