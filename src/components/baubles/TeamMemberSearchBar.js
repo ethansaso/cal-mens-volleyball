@@ -46,7 +46,7 @@ const TeamMemberSearchBar = ({ onSearch, teamMembers, ignoredPositions }) => {
     return (
         <Form inline>
             <Row>
-                <Col>
+                <Col xs="12" sm="12" md="6">
                     <FormGroup>
                         <InputGroup>
                         <Input
@@ -59,42 +59,40 @@ const TeamMemberSearchBar = ({ onSearch, teamMembers, ignoredPositions }) => {
                     </FormGroup>
                     {' '}
                 </Col>
-                <Col>
-                    <div className="team-member-search-dropdown-container">
-                        <FormGroup className="team-member-search-dropdown">
-                            <ButtonDropdown className="team-member-search-dropdown-button" isOpen={positionDropdownOpen} toggle={togglePositionDropdown}>
-                                <DropdownToggle caret>
-                                    Position: {teamMemberPosition}
-                                </DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem onClick={() => setTeamMemberPosition('All')}>All</DropdownItem>
-                                    {teamMemberPossiblePositions && teamMemberPossiblePositions.map(position => (
-                                        <DropdownItem key={position} onClick={() => setTeamMemberPosition(position)}>
-                                            {position}
-                                        </DropdownItem>
-                                    ))}
-                                </DropdownMenu>
-                            </ButtonDropdown>
-                        </FormGroup>
-                        {' '}
-                        <FormGroup className="team-member-search-dropdown">
-                            <ButtonDropdown className="team-member-search-dropdown-button" isOpen={yearDropdownOpen} toggle={toggleYearDropdown}>
-                                <DropdownToggle caret>
-                                    Year: {teamMemberYear}
-                                </DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem onClick={() => setTeamMemberYear('All')}>All</DropdownItem>
-                                    {teamMemberPossibleYears && teamMemberPossibleYears.map(year => (
-                                        <DropdownItem key={year} onClick={() => setTeamMemberYear(year)}>
-                                            {year}
-                                        </DropdownItem>
-                                    ))}
-                                </DropdownMenu>
-                            </ButtonDropdown>
-                        </FormGroup>
-                    </div>
+                <Col xs="12" sm="6" md="3">
+                    <FormGroup className="team-member-search-dropdown">
+                        <ButtonDropdown className="team-member-search-dropdown-button" isOpen={positionDropdownOpen} toggle={togglePositionDropdown}>
+                            <DropdownToggle caret>
+                                Position: {teamMemberPosition}
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem onClick={() => setTeamMemberPosition('All')}>All</DropdownItem>
+                                {teamMemberPossiblePositions && teamMemberPossiblePositions.map(position => (
+                                    <DropdownItem key={position} onClick={() => setTeamMemberPosition(position)}>
+                                        {position}
+                                    </DropdownItem>
+                                ))}
+                            </DropdownMenu>
+                        </ButtonDropdown>
+                    </FormGroup>
                 </Col>
-                {' '}
+                <Col xs="12" sm="6" md="3">
+                    <FormGroup className="team-member-search-dropdown">
+                        <ButtonDropdown className="team-member-search-dropdown-button" isOpen={yearDropdownOpen} toggle={toggleYearDropdown}>
+                            <DropdownToggle caret>
+                                Year: {teamMemberYear}
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem onClick={() => setTeamMemberYear('All')}>All</DropdownItem>
+                                {teamMemberPossibleYears && teamMemberPossibleYears.map(year => (
+                                    <DropdownItem key={year} onClick={() => setTeamMemberYear(year)}>
+                                        {year}
+                                    </DropdownItem>
+                                ))}
+                            </DropdownMenu>
+                        </ButtonDropdown>
+                    </FormGroup>
+                </Col>
             </Row>
         </Form>
     )

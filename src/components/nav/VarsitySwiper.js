@@ -9,6 +9,8 @@ import SacLogo from "../../assets/img/team-logos/Sacramento State Hornets.svg"
 import DavisLogo from "../../assets/img/team-logos/UC Davis Aggies.svg"
 import SonomaLogo from "../../assets/img/team-logos/Sonoma Seawolves.svg"
 import "swiper/css"
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 const VarsitySwiper = () => {
   const matches = [

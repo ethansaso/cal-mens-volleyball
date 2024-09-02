@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 import Roster from "./components/pages/Roster";
 import Schedule from "./components/pages/Schedule";
 import './App.css';
+import Footer from "./components/nav/Footer";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

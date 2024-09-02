@@ -117,7 +117,7 @@ const Roster = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <h6 className="team-member-year">{windowWidth > 767 && (adjustedYear)}</h6>
+                                    <div className="team-member-year">{windowWidth > 767 && (adjustedYear)}</div>
                                 </div>
                                 <div className="team-member-personal">
                                     {teamMembers[filename].hometown && (
