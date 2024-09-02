@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.55c55679.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.11428e81.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.1ba20ce9.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.f11e6d15.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
     "static/media/korte-lee.png": "/cal-mens-volleyball/static/media/korte-lee.4d5dd9186bd461bb1581.png",
     "static/media/joshua-so.jpg": "/cal-mens-volleyball/static/media/joshua-so.842cbeaa279f2739e850.jpg",
@@ -31,12 +31,12 @@
     "static/media/Cal Poly Mustangs.svg": "/cal-mens-volleyball/static/media/Cal Poly Mustangs.810281a218e2c7abb2897f054eeb45d2.svg",
     "index.html": "/cal-mens-volleyball/index.html",
     "static/media/Santa Clara Broncos.svg": "/cal-mens-volleyball/static/media/Santa Clara Broncos.4a8b6d0eef5f11920420c413bc0e87fc.svg",
-    "main.55c55679.css.map": "/cal-mens-volleyball/static/css/main.55c55679.css.map",
-    "main.11428e81.js.map": "/cal-mens-volleyball/static/js/main.11428e81.js.map",
+    "main.1ba20ce9.css.map": "/cal-mens-volleyball/static/css/main.1ba20ce9.css.map",
+    "main.f11e6d15.js.map": "/cal-mens-volleyball/static/js/main.f11e6d15.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55c55679.css",
-    "static/js/main.11428e81.js"
+    "static/css/main.1ba20ce9.css",
+    "static/js/main.f11e6d15.js"
   ]
 }
