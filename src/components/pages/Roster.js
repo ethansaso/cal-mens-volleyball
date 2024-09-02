@@ -16,7 +16,8 @@ const Roster = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const ignoredPositions = useMemo(() => ['head coach', 'coach', 'photographer'], []);
-    const shortenedNames = useMemo(() => ({"Libero": "L", "Outside Hitter": "OH", "Middle": "M", "Opposite Hitter": "OPP", "Setter": "S", "Middle Blocker": "MB", "Defensive Specialist": "DS"}), []);
+    const shortenedPositions = useMemo(() => ({"Libero": "L", "Outside Hitter": "OH", "Middle": "M", "Opposite Hitter": "OPP", "Setter": "S", "Middle Blocker": "MB", "Defensive Specialist": "DS"}), []);
+    const shortenedYears = useMemo(() => ({"Freshman": "Fr.", "Sophomore": "So.", "Junior": "Jr.", "Senior": "Sr.", "Graduate Student": "Gr."}), []);
 
     // Attach listener to watch for resize and set in state
     useEffect(() => {
@@ -77,13 +78,22 @@ const Roster = () => {
             <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>
             {Object.keys(filteredPlayers).map((filename) => {
                 const imagePath = require(`../../assets/img/team-members/${filename}`);
+
                 let adjustedPlayerPositions = null;
+                let adjustedYear = null;
+
                 if (teamMembers[filename].positions) {
                     adjustedPlayerPositions = teamMembers[filename].positions;
-                    adjustedPlayerPositions = adjustedPlayerPositions.map((position) => (windowWidth > 767 ? position : shortenedNames[position] ?? position)).join('/');
+                    adjustedPlayerPositions = adjustedPlayerPositions.map((position) => (windowWidth > 767 ? position : shortenedPositions[position] ?? position)).join('/');
                     console.log(adjustedPlayerPositions, teamMembers[filename].name)
                 } else {
                     adjustedPlayerPositions = 'Position unknown -- please contact staff'
+                }
+                
+                if (teamMembers[filename].year) {
+                    adjustedYear = windowWidth > 767 ? teamMembers[filename].year : shortenedYears[teamMembers[filename].year] ?? teamMembers[filename].year
+                } else {
+                    adjustedYear = 'Year unknown -- please contact staff'
                 }
 
                 return (
@@ -96,7 +106,8 @@ const Roster = () => {
                                         <div className="team-member-primary">
                                             <div className="team-member-primary-top">
                                                 <p style={{fontWeight: '700', marginBottom: '5px'}}>{adjustedPlayerPositions}</p>
-                                                <p style={{marginLeft: '5px', marginBottom: 0}}>{teamMembers[filename].height ? " | " + teamMembers[filename].height : ""}</p>
+                                                <p style={{marginLeft: '5px', marginBottom: '5px', marginRight: '-2px'}}>{teamMembers[filename].height ? "| " + teamMembers[filename].height : ""}</p>
+                                                <p className="team-member-year" style={{marginLeft: '5px', marginBottom: '5px', color: 'gray'}}>{windowWidth <= 767 && ("| " + adjustedYear)}</p>
                                             </div>
                                             <div className="team-member-primary-bottom">
                                                 <h2>
@@ -106,7 +117,7 @@ const Roster = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <h6 className="team-member-year">{teamMembers[filename].year ?? 'Year unknown -- please contact staff'}</h6>
+                                    <h6 className="team-member-year">{windowWidth > 767 && (adjustedYear)}</h6>
                                 </div>
                                 <div className="team-member-personal">
                                     {teamMembers[filename].hometown && (
