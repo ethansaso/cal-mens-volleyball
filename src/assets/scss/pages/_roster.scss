@@ -29,10 +29,19 @@
 
 .team-member-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.team-member-left {
+.team-member-top {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.team-member-ul {
     display: flex;
     flex-direction: column;
 }
@@ -44,13 +53,30 @@
 
 .team-member-personal {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.team-member-personal-entry {
+    margin-bottom: 0px;
+    gap: 2px;
+    color: gray;
+}
+
+.team-member-personal-text {
+    margin-left: 2px;
 }
 
 .team-member-year {
     margin-left: auto;
+    
+    @media (max-width: 767px) {
+        margin-left: 0;
+    }
 }
 
-.team-member-text {
+.team-member-primary-top {
     margin-bottom: 2px;
     display: flex;
     align-items: flex-start;
@@ -58,13 +84,28 @@
 }
 
 .roster-number {
-    width: 38px;
-    height: 38px;
-    line-height: 35px;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 2px;
     margin-right: 8px;
     text-align: center;
     background-color: #041e42;
     color: $cal-gold-color;
+
+    @media (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+        font-size: 1.125rem;
+        padding-bottom: 0px;
+    }
+}
+
+.player-name {
+    vertical-align: top;
 }
 
 .search-result-count {

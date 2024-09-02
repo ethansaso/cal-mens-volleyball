@@ -3,6 +3,7 @@ import teamMembers from '../../data/teamMembers.json';
 import Reveal from "../util/Reveal";
 import { useEffect, useMemo, useState } from "react";
 import TeamMemberSearchBar from "../baubles/TeamMemberSearchBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Roster = () => {
     const [searchedTeamMemberName, setSearchedTeamMemberName] = useState('');
@@ -12,7 +13,19 @@ const Roster = () => {
     const [filteredPlayers, setFilteredPlayers] = useState('');
     const [staffMembers, setStaffMembers] = useState('');
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     const ignoredPositions = useMemo(() => ['head coach', 'coach', 'photographer'], []);
+    const shortenedNames = useMemo(() => ({"Libero": "L", "Outside Hitter": "OH", "Middle": "M", "Opposite Hitter": "OPP", "Setter": "S", "Middle Blocker": "MB", "Defensive Specialist": "DS"}), []);
+
+    // Attach listener to watch for resize and set in state
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        }
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         const filtered = Object.keys(teamMembers).filter((key) => {
@@ -64,29 +77,51 @@ const Roster = () => {
             <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>
             {Object.keys(filteredPlayers).map((filename) => {
                 const imagePath = require(`../../assets/img/team-members/${filename}`);
+                let adjustedPlayerPositions = null;
+                if (teamMembers[filename].positions) {
+                    adjustedPlayerPositions = teamMembers[filename].positions;
+                    adjustedPlayerPositions = adjustedPlayerPositions.map((position) => (windowWidth > 767 ? position : shortenedNames[position] ?? position)).join('/');
+                    console.log(adjustedPlayerPositions, teamMembers[filename].name)
+                } else {
+                    adjustedPlayerPositions = 'Position unknown -- please contact staff'
+                }
 
                 return (
                     <Reveal width="100%">
                         <Card className="team-member-card" key={filename}>
                             <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
                             <CardBody className="team-member-details">
-                                <div className="team-member-left">
-                                    <div className="team-member-primary">
-                                        <div className="team-member-text">
-                                            <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
-                                            <p style={{marginLeft: '5px', marginBottom: 0}}>{teamMembers[filename].height ? " | " + teamMembers[filename].height : ""}</p>
-                                        </div>
-                                        <div className="team-member-text">
-                                            <h2 className="roster-number">{teamMembers[filename].number}</h2>
-                                            <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
+                                <div className="team-member-top">
+                                    <div className="team-member-ul">
+                                        <div className="team-member-primary">
+                                            <div className="team-member-primary-top">
+                                                <p style={{fontWeight: '700', marginBottom: '5px'}}>{adjustedPlayerPositions}</p>
+                                                <p style={{marginLeft: '5px', marginBottom: 0}}>{teamMembers[filename].height ? " | " + teamMembers[filename].height : ""}</p>
+                                            </div>
+                                            <div className="team-member-primary-bottom">
+                                                <h2>
+                                                    <span className="roster-number">{teamMembers[filename].number}</span>
+                                                    <span className="player-name" style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</span>
+                                                </h2>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="team-member-personal">
-                                        <p className="team-member-text">{teamMembers[filename].hometown}</p>
-                                        <p className="team-member-text" style={{marginBottom: 0}}>{teamMembers[filename].highschool}</p>
-                                    </div>
+                                    <h6 className="team-member-year">{teamMembers[filename].year ?? 'Year unknown -- please contact staff'}</h6>
                                 </div>
-                                <h6 className="team-member-year">{teamMembers[filename].year ?? 'Year unknown -- please contact staff'}</h6>
+                                <div className="team-member-personal">
+                                    {teamMembers[filename].hometown && (
+                                        <p className="team-member-personal-entry">
+                                            <FontAwesomeIcon icon="fa-solid fa-tree-city" fixedWidth style={{marginRight: '5px'}}/>
+                                            {teamMembers[filename].hometown}
+                                        </p>
+                                    )}
+                                    {teamMembers[filename].highschool && (
+                                        <p className="team-member-personal-entry" style={{marginBottom: 0}}>
+                                            <FontAwesomeIcon icon="fa-solid fa-school" fixedWidth style={{marginRight: '5px'}}/>
+                                            {teamMembers[filename].highschool}
+                                        </p>
+                                    )}
+                                </div>
                             </CardBody>
                         </Card>
                     </Reveal>
@@ -101,14 +136,10 @@ const Roster = () => {
                         <Card className="team-member-card" key={filename}>
                             <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
                             <CardBody className="team-member-details">
-                                <div className="team-member-left">
+                                <div className="team-member-ul">
                                     <div className="team-member-primary">
-                                        <div className="team-member-text">
-                                            <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
-                                        </div>
-                                        <div className="team-member-text">
-                                            <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
-                                        </div>
+                                        <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
+                                        <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
                                     </div>
                                 </div>
                             </CardBody>

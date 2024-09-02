@@ -44,14 +44,21 @@
     margin-top: 0; /* Optional: Adjust this to avoid any spacing issues */
   }
 
+.navbar-dropdown {
+    position: relative;
+}
+
 .navbar-dropdown-menu {
+    position: absolute;
+    top: 59px !important;
+    left: -14px !important;
     font-family: "Blockletter";
-    transform: scaleY(1.1);
     font-size: 1.7rem;
     width: 230px;
     margin: 0;
     border-radius: 0;
     background-color: #041e42;
+    border: none;
 }
 
 .navbar-dropdown-item {
