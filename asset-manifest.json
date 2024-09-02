@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.1ba20ce9.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.f11e6d15.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.bece58ff.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.eb9588dd.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
     "static/media/korte-lee.png": "/cal-mens-volleyball/static/media/korte-lee.4d5dd9186bd461bb1581.png",
     "static/media/joshua-so.jpg": "/cal-mens-volleyball/static/media/joshua-so.842cbeaa279f2739e850.jpg",
@@ -27,16 +27,19 @@
     "static/media/Fresno State Bulldogs.svg": "/cal-mens-volleyball/static/media/Fresno State Bulldogs.14d0def7b3352611d602c6984ab53c03.svg",
     "static/media/cal-logo.png": "/cal-mens-volleyball/static/media/cal-logo.969ea4d29302ab6d47b4.png",
     "static/media/Chico State Wildcats.svg": "/cal-mens-volleyball/static/media/Chico State Wildcats.21ba03990cae685a07672afeafbfb0eb.svg",
+    "static/media/Sonoma Seawolves.svg": "/cal-mens-volleyball/static/media/Sonoma Seawolves.357bf1ec60e75a863665cd7c1a89d0c9.svg",
     "static/media/Stanford Cardinal Icon.svg": "/cal-mens-volleyball/static/media/Stanford Cardinal Icon.e92eca0e7809dd07cdd398f43e34aa0c.svg",
     "static/media/Cal Poly Mustangs.svg": "/cal-mens-volleyball/static/media/Cal Poly Mustangs.810281a218e2c7abb2897f054eeb45d2.svg",
+    "static/media/Sacramento State Hornets.svg": "/cal-mens-volleyball/static/media/Sacramento State Hornets.5dc241deb1a54a4ddf30de8fa4497b7e.svg",
     "index.html": "/cal-mens-volleyball/index.html",
+    "static/media/UC Davis Aggies.svg": "/cal-mens-volleyball/static/media/UC Davis Aggies.576ba556bdbac41810f8063fdc6d1fd6.svg",
     "static/media/Santa Clara Broncos.svg": "/cal-mens-volleyball/static/media/Santa Clara Broncos.4a8b6d0eef5f11920420c413bc0e87fc.svg",
-    "main.1ba20ce9.css.map": "/cal-mens-volleyball/static/css/main.1ba20ce9.css.map",
-    "main.f11e6d15.js.map": "/cal-mens-volleyball/static/js/main.f11e6d15.js.map",
+    "main.bece58ff.css.map": "/cal-mens-volleyball/static/css/main.bece58ff.css.map",
+    "main.eb9588dd.js.map": "/cal-mens-volleyball/static/js/main.eb9588dd.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ba20ce9.css",
-    "static/js/main.f11e6d15.js"
+    "static/css/main.bece58ff.css",
+    "static/js/main.eb9588dd.js"
   ]
 }
