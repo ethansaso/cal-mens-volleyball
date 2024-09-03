@@ -55,14 +55,14 @@
     font-family: "Blockletter";
     font-size: 1.7rem;
     width: 230px;
-    margin: 0;
+    margin: 0 !important;
     border-radius: 0;
     background-color: #041e42;
     border: none;
 }
 
 .navbar-dropdown-item {
-    padding: 8px 14px;
+    padding: 4px 0px 0px 14px;
     color: #fff !important;
     display: flex;
 

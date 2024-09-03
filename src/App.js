@@ -8,7 +8,8 @@ import Roster from "./components/pages/Roster";
 import Schedule from "./components/pages/Schedule";
 import './App.css';
 import Footer from "./components/nav/Footer";
-import Donations from "./components/pages/Donations";
+import Donate from "./components/pages/Donate";
+import Resources from "./components/pages/Resources";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
@@ -31,7 +32,8 @@ function App() {
         <Routes>
           <Route exact path={"/"} element={<Home />} />
           <Route path={"about"} element={<About />} />
-          <Route path={"donations"} element={<Donations />} />
+          <Route path={"donations"} element={<Donate />} />
+          <Route path={"resources"} element={<Resources />} />
           <Route path={"roster"} element={<Roster />} />
           <Route path={"schedule"} element={<Schedule />} />
           <Route path="*" element={<Navigate replace to="/" />} />

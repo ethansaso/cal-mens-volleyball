@@ -91,8 +91,13 @@ function Navigation(args) {
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
+                <NavLink href={`${path_prefix}resources`}>
+                  Resources
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}donations`}>
-                  Donations
+                  Donate
                 </NavLink>
               </DropdownItem>
             </DropdownMenu>
