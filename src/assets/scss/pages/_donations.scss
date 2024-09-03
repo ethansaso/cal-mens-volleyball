@@ -1,0 +1,20 @@
+.donations-header-container {
+    width: 100%;
+    background: linear-gradient(#0009, #0009), url(../../img/teamsplash1.jpeg);
+    background-size: cover;
+    background-position: 50% 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 200px;
+    position: relative;
+}
+
+.donations-header-content {    
+    font-family: "Blockletter";
+    color: $cal-gold-color;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-bottom: 0;
+}

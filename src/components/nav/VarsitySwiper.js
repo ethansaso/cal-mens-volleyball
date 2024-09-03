@@ -18,9 +18,9 @@ const VarsitySwiper = () => {
     { homeTeam: "California", visitorTeam: "Chico State", date: "2025-02-17 | 10:00 a.m. PT" },
     { homeTeam: "California", visitorTeam: "Fresno State", date: "2025-02-26 | 10:00 a.m. PT" },
     { homeTeam: "Santa Clara", visitorTeam: "California", date: "2025-03-07 | 10:00 a.m. PT" },
-    { homeTeam: "California", visitorTeam: "Sacramento State", date: "2025-02-17 | 10:00 a.m. PT" },
-    { homeTeam: "UC Davis", visitorTeam: "California", date: "2025-02-26 | 10:00 a.m. PT" },
-    { homeTeam: "Santa Clara", visitorTeam: "Sonoma State", date: "2025-03-07 | 10:00 a.m. PT" },
+    { homeTeam: "California", visitorTeam: "Sacramento State", date: "2025-03-08 | 10:00 a.m. PT" },
+    { homeTeam: "UC Davis", visitorTeam: "California", date: "2025-03-21 | 10:00 a.m. PT" },
+    { homeTeam: "California", visitorTeam: "Sonoma State", date: "2025-03-29 | 10:00 a.m. PT" },
     // Add more matches as needed
   ];
 
