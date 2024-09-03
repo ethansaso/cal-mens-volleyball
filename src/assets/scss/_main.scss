@@ -17,8 +17,12 @@
 }
 
 .main {
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 767px) {
     padding: 50px 20px;
+  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    padding: 50px 10%;
   }
 
   @media only screen and (min-width: 1024px) {

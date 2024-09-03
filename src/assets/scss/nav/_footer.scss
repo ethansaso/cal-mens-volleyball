@@ -1,16 +1,13 @@
 .footer1-container {
     width: 100%;
     min-height: 55px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     background-color: #fff;
     font-weight: bold;
     border-top: 1px lightgray solid;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 30px 20%;
     flex-wrap: wrap;
 
     @media (max-width: 1023px) {
@@ -19,11 +16,8 @@
     }
 
     @media (max-width: 767px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -36,9 +30,7 @@
     border-top: 1px lightgray solid;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0px 20%;
 
     a {
         color: #ffc72c !important
@@ -50,9 +42,22 @@
     }
 
     @media (max-width: 767px) {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
         justify-content: center;
+    }
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -61,7 +66,6 @@
 
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 400px;
     }
 }
 
@@ -70,11 +74,9 @@
 }
 
 .footer-nav {
-    width: 67%;
-
+    flex-grow: 1;
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 400px;
         margin-bottom: 30px;
     }
 }
@@ -87,13 +89,13 @@
 .footer-nav-column {
     @media (max-width: 767px) {
         width: auto !important;
-        min-width: 0px !important;
+        min-width: 150px !important;
     }
 }
 
 .footer-nav-column:first-of-type {
     width: 40%;
-    min-width: 180px;
+    max-width: 350px;
     flex-grow: 1;
 }
 
@@ -103,11 +105,9 @@
 }
 
 .footer-socials {
-    width: 33%;
-
+    flex-shrink: 1;
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 400px;
     }
 }
 
