@@ -2,28 +2,19 @@
     width: 100%;
     background: linear-gradient(#0009, #0009), url(../../img/teamsplash2.jpg);
     background-size: cover;
-    background-position: 50% 25%;
-    height: 450px;
-    max-height: calc(100vh - 166px);
+    background-position: 50% 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 200px;
     position: relative;
-
-    @media only screen and (max-width: 1023px) {
-        padding: 50px 25px;
-    }
-    
-      @media only screen and (min-width: 1024px) {
-        padding: 50px 20%;
-    }
 }
 
-.about-header-content {
-    position: absolute;
-    padding: inherit;
-    left: 0;
-    bottom: 0;
-    
+.about-header-content {    
     font-family: "Blockletter";
     color: $cal-gold-color;
     box-sizing: border-box;
     z-index: 1;
+    margin-bottom: 0;
 }

@@ -138,7 +138,7 @@ const Roster = () => {
                     </Reveal>
                 );
             })}
-            <h1>Staff</h1>
+            <h1 style={{marginTop: '40px'}}>Staff</h1>
             {Object.keys(staffMembers).map((filename) => {
                 const imagePath = require(`../../assets/img/team-members/${filename}`);
 
