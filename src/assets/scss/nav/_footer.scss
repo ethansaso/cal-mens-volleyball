@@ -1,8 +1,8 @@
 .footer1-container {
     width: 100%;
     min-height: 55px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #fff;
     font-weight: bold;
     border-top: 1px lightgray solid;
@@ -61,7 +61,7 @@
 
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
     }
 }
 
@@ -74,7 +74,8 @@
 
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
+        margin-bottom: 30px;
     }
 }
 
@@ -86,6 +87,7 @@
 .footer-nav-column {
     @media (max-width: 767px) {
         width: auto !important;
+        min-width: 0px !important;
     }
 }
 
@@ -105,7 +107,7 @@
 
     @media (max-width: 767px) {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
     }
 }
 
