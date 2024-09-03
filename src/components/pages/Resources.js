@@ -19,10 +19,10 @@ const Resources = () => {
           <h2 style={{fontWeight: 'bold'}}>
             Club Dues
           </h2>
-          <Table bordered={false}>
+          <Table bordered={true}>
             <thead>
               <tr>
-                <th>Duration</th>
+                <th style={{width: '30%'}}>Duration</th>
                 <th>Price</th>
               </tr>
             </thead>
