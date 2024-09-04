@@ -36,12 +36,16 @@ function Navigation(args) {
         <Nav className="me-auto" navbar>
           <NavItem>
             <NavLink href={path_prefix + "schedule"}>
-              Game Schedule
+              <div className="nav-text">
+                Game Schedule
+              </div>
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href={path_prefix + "roster"}>
-              Meet the Team
+              <div className="nav-text">
+                Meet the Team
+              </div>
             </NavLink>
           </NavItem>
         </Nav>
@@ -54,22 +58,30 @@ function Navigation(args) {
             aria-expanded="false"
             className="ooga"
             >
-              Socials
+              <div className="nav-text">
+                Socials
+              </div>
             </DropdownToggle>
             <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://www.instagram.com/calclubvolleyball" style={{paddingLeft: '0 !important'}}>
-                  Instagram
+                  <div className="nav-text">
+                    Instagram
+                  </div>
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://www.facebook.com/calclubvball/">
-                  Facebook
+                  <div className="nav-text">
+                    Facebook
+                  </div>
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href="https://recwell.berkeley.edu/competitive-programs/sport-clubs/volleyball-mens/">
-                  Recwell
+                  <div className="nav-text">
+                    Recwell
+                  </div>
                 </NavLink>
               </DropdownItem>
             </DropdownMenu>
@@ -82,22 +94,30 @@ function Navigation(args) {
             aria-expanded="false"
             className="ooga"
             >
-              More
+              <div className="nav-text">
+                More
+              </div>
             </DropdownToggle>
             <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}about`}>
-                  About
+                  <div className="nav-text">
+                    About
+                  </div>
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}resources`}>
-                  Resources
+                  <div className="nav-text">
+                    Resources
+                  </div>
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}donations`}>
-                  Donate
+                  <div className="nav-text">
+                    Donate
+                  </div>
                 </NavLink>
               </DropdownItem>
             </DropdownMenu>

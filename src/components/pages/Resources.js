@@ -46,15 +46,15 @@ const Resources = () => {
               Get in Touch!
             </h2>
             <div style={{display: 'flex', gap: '5px'}}>
-              <Button href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
+              <Button color="warning" href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-solid fa-envelope" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Club Email
               </Button>
-              <Button href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
+              <Button color="warning" href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-brands fa-instagram" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Instagram
               </Button>
-              <Button href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
+              <Button color="warning" href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-brands fa-facebook" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Facebook
               </Button>

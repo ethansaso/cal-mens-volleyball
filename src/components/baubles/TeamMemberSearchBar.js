@@ -62,7 +62,7 @@ const TeamMemberSearchBar = ({ onSearch, teamMembers, ignoredPositions }) => {
                 <Col xs="12" sm="6" md="3">
                     <FormGroup className="team-member-search-dropdown">
                         <ButtonDropdown className="team-member-search-dropdown-button" isOpen={positionDropdownOpen} toggle={togglePositionDropdown}>
-                            <DropdownToggle caret>
+                            <DropdownToggle color="warning" caret>
                                 Position: {teamMemberPosition}
                             </DropdownToggle>
                             <DropdownMenu>
@@ -79,7 +79,7 @@ const TeamMemberSearchBar = ({ onSearch, teamMembers, ignoredPositions }) => {
                 <Col xs="12" sm="6" md="3">
                     <FormGroup className="team-member-search-dropdown">
                         <ButtonDropdown className="team-member-search-dropdown-button" isOpen={yearDropdownOpen} toggle={toggleYearDropdown}>
-                            <DropdownToggle caret>
+                            <DropdownToggle color="warning" caret>
                                 Year: {teamMemberYear}
                             </DropdownToggle>
                             <DropdownMenu>
