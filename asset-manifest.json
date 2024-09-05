@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/cal-mens-volleyball/static/css/main.a0d17d1b.css",
-    "main.js": "/cal-mens-volleyball/static/js/main.dd903f46.js",
+    "main.css": "/cal-mens-volleyball/static/css/main.80a8963a.css",
+    "main.js": "/cal-mens-volleyball/static/js/main.64640e71.js",
     "static/js/453.8314f1fb.chunk.js": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js",
     "static/media/korte-lee.png": "/cal-mens-volleyball/static/media/korte-lee.4d5dd9186bd461bb1581.png",
+    "static/media/teamsplash1-yellow.jpg": "/cal-mens-volleyball/static/media/teamsplash1-yellow.aeb56fc07ffce251cabc.jpg",
     "static/media/joshua-so.jpg": "/cal-mens-volleyball/static/media/joshua-so.842cbeaa279f2739e850.jpg",
     "static/media/joshua-rosen.jpg": "/cal-mens-volleyball/static/media/joshua-rosen.512b47165b3f1530977d.jpg",
     "static/media/bryce-lowery.jpg": "/cal-mens-volleyball/static/media/bryce-lowery.62d0bf9a036e1d110665.jpg",
@@ -21,14 +22,18 @@
     "static/media/justin-hong.jpg": "/cal-mens-volleyball/static/media/justin-hong.875625ed75d17400a0d4.jpg",
     "static/media/Glory of Justice.otf": "/cal-mens-volleyball/static/media/Glory of Justice.d1d972d6c3c4b5ab6530.otf",
     "static/media/brennan-morgan.jpg": "/cal-mens-volleyball/static/media/brennan-morgan.c686a3b3b36878ed3ea4.jpg",
+    "static/media/i3.jpg": "/cal-mens-volleyball/static/media/i3.35e98ad43133a50fb5be.jpg",
     "static/media/teamsplash1.jpeg": "/cal-mens-volleyball/static/media/teamsplash1.550ca53583ca4732a362.jpeg",
     "static/media/justinsplash_up.jpg": "/cal-mens-volleyball/static/media/justinsplash_up.bdaaa8c22b1ff1a08368.jpg",
+    "static/media/i1.jpg": "/cal-mens-volleyball/static/media/i1.1479bcd1727121bbd006.jpg",
+    "static/media/i2.jpg": "/cal-mens-volleyball/static/media/i2.3e845c994e47d1ee9e73.jpg",
     "static/media/teamsplash2.jpg": "/cal-mens-volleyball/static/media/teamsplash2.9488515ee99d85584b86.jpg",
     "static/media/justinsplash2.jpg": "/cal-mens-volleyball/static/media/justinsplash2.8ba0e469ee920bcb1071.jpg",
     "static/media/Blockletter.otf": "/cal-mens-volleyball/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/Fresno State Bulldogs.svg": "/cal-mens-volleyball/static/media/Fresno State Bulldogs.14d0def7b3352611d602c6984ab53c03.svg",
     "static/media/cal-logo.png": "/cal-mens-volleyball/static/media/cal-logo.969ea4d29302ab6d47b4.png",
     "static/media/Chico State Wildcats.svg": "/cal-mens-volleyball/static/media/Chico State Wildcats.21ba03990cae685a07672afeafbfb0eb.svg",
+    "static/media/Nevada Wolf Pack.svg": "/cal-mens-volleyball/static/media/Nevada Wolf Pack.bb5857502c8222b5813bd27eb96483fd.svg",
     "static/media/Sonoma Seawolves.svg": "/cal-mens-volleyball/static/media/Sonoma Seawolves.357bf1ec60e75a863665cd7c1a89d0c9.svg",
     "static/media/Stanford Cardinal Icon.svg": "/cal-mens-volleyball/static/media/Stanford Cardinal Icon.e92eca0e7809dd07cdd398f43e34aa0c.svg",
     "static/media/Cal Poly Mustangs.svg": "/cal-mens-volleyball/static/media/Cal Poly Mustangs.810281a218e2c7abb2897f054eeb45d2.svg",
@@ -36,12 +41,12 @@
     "index.html": "/cal-mens-volleyball/index.html",
     "static/media/UC Davis Aggies.svg": "/cal-mens-volleyball/static/media/UC Davis Aggies.576ba556bdbac41810f8063fdc6d1fd6.svg",
     "static/media/Santa Clara Broncos.svg": "/cal-mens-volleyball/static/media/Santa Clara Broncos.4a8b6d0eef5f11920420c413bc0e87fc.svg",
-    "main.a0d17d1b.css.map": "/cal-mens-volleyball/static/css/main.a0d17d1b.css.map",
-    "main.dd903f46.js.map": "/cal-mens-volleyball/static/js/main.dd903f46.js.map",
+    "main.80a8963a.css.map": "/cal-mens-volleyball/static/css/main.80a8963a.css.map",
+    "main.64640e71.js.map": "/cal-mens-volleyball/static/js/main.64640e71.js.map",
     "453.8314f1fb.chunk.js.map": "/cal-mens-volleyball/static/js/453.8314f1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0d17d1b.css",
-    "static/js/main.dd903f46.js"
+    "static/css/main.80a8963a.css",
+    "static/js/main.64640e71.js"
   ]
 }
