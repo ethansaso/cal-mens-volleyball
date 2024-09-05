@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home-section" style={{backgroundColor: 'white'}}>
           <div className="home-text-container">
             <div className="home-section-text-wrapper">
-              <h1 className="display-4" style={{fontWeight: 'bold'}}>
+              <h1 className="display-5" style={{fontWeight: 'bold'}}>
                 Six-time <span style={{color: '#ffc72c'}}>national club champions</span>.
               </h1>
               <h4>
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
           <div className="home-text-container">
             <div className="home-section-text-wrapper">
-              <h1 className="display-4" style={{fontWeight: 'bold'}}>
+              <h1 className="display-5" style={{fontWeight: 'bold'}}>
                 Recognized <span style={{color: '#ffc72c'}}>Division I competitors</span>.
               </h1>
               <h4>
@@ -54,8 +54,8 @@ const Home = () => {
         </div>
         <div className="home-cta">
           <h1 className="display-4" style={{fontWeight: 'bold'}}>Become a part of <span style={{color: '#ffc72c'}}>Cal's history.</span></h1>
-          <h4>Sign up for the latest tryout & event details for Cal Men's Volleyball.</h4>
-          <Button href="forms.gle/rr886m2Fgmikk4WW6" color="warning">Click here</Button>
+          <h4 style={{marginBottom: '20px'}}>Sign up for the latest tryout & event details for Cal Men's Volleyball.</h4>
+          <Button href="forms.gle/rr886m2Fgmikk4WW6" color="warning" style={{fontWeight: 'bold'}}>Click here</Button>
         </div>
       </div>
       {/*
