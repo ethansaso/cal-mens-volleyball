@@ -95,21 +95,21 @@ function Navigation(args) {
             className="ooga"
             >
               <div className="nav-text">
-                More
+                Info
               </div>
             </DropdownToggle>
-            <DropdownMenu className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
+            <DropdownMenu end className="navbar-dropdown-menu" aria-labelledby='optionsDropdownButton'>
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href={`${path_prefix}about`}>
+                <NavLink href={`${path_prefix}new-players`}>
                   <div className="nav-text">
-                    About
+                    New Players
                   </div>
                 </NavLink>
               </DropdownItem>
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href={`${path_prefix}resources`}>
+                <NavLink href={`${path_prefix}current-players`}>
                   <div className="nav-text">
-                    Resources
+                    Current Players
                   </div>
                 </NavLink>
               </DropdownItem>

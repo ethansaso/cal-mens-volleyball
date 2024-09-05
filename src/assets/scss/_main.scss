@@ -13,7 +13,9 @@
 .content {
   grid-area: content;
   overflow-y: auto; /* Allows scrolling if the content overflows */
+  overflow-x: hidden;
   background-color: #eee; /* Optional: set a background color */
+  width: 100dvw;
 }
 
 .main {

@@ -1,4 +1,4 @@
-.about-header-container {
+.new-players-header-container {
     width: 100%;
     background: linear-gradient(#0009, #0009), url(../../img/teamsplash2.jpg);
     background-size: cover;
@@ -32,11 +32,11 @@
     position: relative;
 }
 
-.resources-header-container {
+.current-players-header-container {
     width: 100%;
     background: linear-gradient(#0009, #0009), url(../../img/justinsplash2.jpg);
     background-size: cover;
-    background-position: 50% 65%;
+    background-position: 50% 60%;
     display: flex;
     align-items: center;
     justify-content: center;

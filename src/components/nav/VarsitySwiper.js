@@ -8,19 +8,20 @@ import StanfordLogo from "../../assets/img/team-logos/Stanford Cardinal Icon.svg
 import SacLogo from "../../assets/img/team-logos/Sacramento State Hornets.svg"
 import DavisLogo from "../../assets/img/team-logos/UC Davis Aggies.svg"
 import SonomaLogo from "../../assets/img/team-logos/Sonoma Seawolves.svg"
+import UNRLogo from "../../assets/img/team-logos/Nevada Wolf Pack.svg"
 import "swiper/css"
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
 const VarsitySwiper = () => {
   const matches = [
-    { homeTeam: "Stanford", visitorTeam: "California", date: "2025-01-29 | 10:00 a.m. PT" },
-    { homeTeam: "California", visitorTeam: "Chico State", date: "2025-02-17 | 10:00 a.m. PT" },
-    { homeTeam: "California", visitorTeam: "Fresno State", date: "2025-02-26 | 10:00 a.m. PT" },
-    { homeTeam: "Santa Clara", visitorTeam: "California", date: "2025-03-07 | 10:00 a.m. PT" },
-    { homeTeam: "California", visitorTeam: "Sacramento State", date: "2025-03-08 | 10:00 a.m. PT" },
-    { homeTeam: "UC Davis", visitorTeam: "California", date: "2025-03-21 | 10:00 a.m. PT" },
-    { homeTeam: "California", visitorTeam: "Sonoma State", date: "2025-03-29 | 10:00 a.m. PT" },
+    { homeTeam: "UC Davis", visitorTeam: "California", date: "2024-03-02 | 11:00 p.m. PT" },
+    { homeTeam: "Sacramento State", visitorTeam: "California", date: "2024-03-02 | 2:00 p.m. PT" },
+    { homeTeam: "Chico State", visitorTeam: "California", date: "2024-03-03 | 11:00 p.m. PT" },
+    { homeTeam: "Sonoma State", visitorTeam: "California", date: "2024-03-03 | 1:00 p.m. PT" },
+    { homeTeam: "California", visitorTeam: "Sacramento State", date: "2024-03-10 | 11:00 p.m. PT" },
+    { homeTeam: "California", visitorTeam: "Cal Poly SLO", date: "2024-03-10 | 3:00 p.m. PT" },
+    { homeTeam: "UNR", visitorTeam: "California", date: "2024-03-28 | 12:00 p.m. PT" },
     // Add more matches as needed
   ];
 
@@ -34,6 +35,7 @@ const VarsitySwiper = () => {
     "Sacramento State": SacLogo,
     "UC Davis": DavisLogo,
     "Sonoma State": SonomaLogo,
+    "UNR": UNRLogo,
   }
 
   return (

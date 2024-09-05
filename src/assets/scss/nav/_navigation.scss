@@ -35,6 +35,8 @@
     font-size: 1.7rem;
     padding-left: 14px !important;
     padding-right: 14px !important;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 .nav-link:hover {
@@ -57,11 +59,9 @@
 
 .navbar-dropdown-menu {
     position: absolute;
-    top: 59px !important;
-    left: -14px !important;
     font-family: "Blockletter";
     font-size: 1.7rem;
-    width: 230px;
+    width: 232px;
     margin: 0 !important;
     border-radius: 0;
     background-color: #041e42;

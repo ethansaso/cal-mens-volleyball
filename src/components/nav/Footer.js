@@ -23,10 +23,10 @@ const Footer = () => {
                             </div>
                             <div className="footer-nav-column">
                                 <p className="footer-text">
-                                    <a href={`${path_prefix}about`} className="footer-link" style={{color: "black"}}>About</a>
+                                    <a href={`${path_prefix}new-players`} className="footer-link" style={{color: "black"}}>New Players</a>
                                 </p>
                                 <p className="footer-text">
-                                    <a href={`${path_prefix}resources`} className="footer-link" style={{color: "black"}}>Resources</a>
+                                    <a href={`${path_prefix}current-players`} className="footer-link" style={{color: "black"}}>Current Players</a>
                                 </p>
                                 <p className="footer-text">
                                     <a href={`${path_prefix}donate`} className="footer-link" style={{color: "black"}}>Donate</a>
