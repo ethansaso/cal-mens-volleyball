@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalLogo from "../../assets/img/cal-logo.png"
-import i1 from "../../assets/img/action-shots/i1.jpg"
-import i2 from "../../assets/img/action-shots/i2.jpg"
-import i3 from "../../assets/img/action-shots/i3.jpg"
+import i1 from "../../assets/img/action-shots/i2.jpg"
+import i2 from "../../assets/img/action-shots/i3.jpg"
 import { Button } from "reactstrap";
 
 const Home = () => {
@@ -29,22 +28,22 @@ const Home = () => {
                 Six-time <span style={{color: '#ffc72c'}}>national club champions</span>.
               </h1>
               <h4>
-                Every year, Cal Men's Volleyball competes for the illustrious title of National Champions.
+                Each year, Cal Men's Volleyball contends with top schools across the country for the coveted National Championship title.
               </h4>
             </div>
           </div>
           <div className="home-image-container">
-            <img className="home-image" src={i2} alt="test" style={{objectPosition: "50% 0"}}/>
+            <img className="home-image hi1" src={i1} alt="test" />
           </div>
         </div>
         <div className="home-section" style={{backgroundColor: "#02132B", color: "#fff"}}>
           <div className="home-image-container">
-            <img className="home-image" src={i3} alt="test" style={{objectPosition: "50% 0"}}/>
+            <img className="home-image hi2" src={i2} alt="test" />
           </div>
           <div className="home-text-container">
             <div className="home-section-text-wrapper">
               <h1 className="display-5" style={{fontWeight: 'bold'}}>
-                Recognized <span style={{color: '#ffc72c'}}>Division I competitors</span>.
+                Official <span style={{color: '#ffc72c'}}>Division I competitors</span>.
               </h1>
               <h4>
                 Cal Men's competes both in the Northern California Collegiate Volleyball League (NCCVL) during spring, and the National Championships hosted by the National Collegiate Volleyball Federation (NCVF) in April.
@@ -54,8 +53,10 @@ const Home = () => {
         </div>
         <div className="home-cta">
           <h1 className="display-4" style={{fontWeight: 'bold'}}>Become a part of <span style={{color: '#ffc72c'}}>Cal's history.</span></h1>
-          <h4 style={{marginBottom: '20px'}}>Sign up for the latest tryout & event details for Cal Men's Volleyball.</h4>
-          <Button href="forms.gle/rr886m2Fgmikk4WW6" color="warning" style={{fontWeight: 'bold'}}>Click here</Button>
+          <h4 style={{marginBottom: '20px'}}>Get the latest tryout & event details for Cal Men's Volleyball.</h4>
+          <Button href="forms.gle/rr886m2Fgmikk4WW6" color="warning" style={{padding: '10px 30px'}}>
+            <h2 style={{fontFamily: 'Blockletter', margin: 0}}>SIGN UP</h2>
+          </Button>
         </div>
       </div>
       {/*

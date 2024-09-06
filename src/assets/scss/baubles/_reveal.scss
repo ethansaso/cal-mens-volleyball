@@ -1,0 +1,10 @@
+.reveal {
+    opacity: 0;
+    transform: translateX(-75px);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}

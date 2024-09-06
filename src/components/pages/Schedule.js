@@ -1,5 +1,4 @@
 import CalLogo from "../../assets/img/cal-logo.png"
-import MatchesJson from "../../data/matches.json"
 
 const Schedule = () => {
     return (

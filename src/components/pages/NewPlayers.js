@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Row, Table } from "reactstrap";
+import { Button, Card, CardBody, CardFooter, CardHeader, CardTitle, Col, Row, Table } from "reactstrap";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
@@ -12,49 +12,74 @@ const NewPlayers = () => {
           </h1>
         </header>
         <main className="main">
-          <h2 style={{fontWeight: 'bold'}}>
-            Commitment
-          </h2>
-          <p>
-            Cal Men's Volleyball requires a player to attend practices and tournaments on a regular basis to be considered for a starting position. A player's workload may vary, however, the team includes students spanning all majors, colleges, and unit loads from 12-20 units per semester. Cal Men's Volleyball is flexible for players and understand outstanding circumstances in which a player may not be able to attend some practices.
-          </p>
-          <h2 style={{fontWeight: 'bold'}}>
-            Travel
-          </h2>
-          <p>
-            Cal Men's Volleyball requires a player to attend practices and tournaments on a regular basis to be considered for a starting position. A player's workload may vary, however, the team includes students spanning all majors, colleges, and unit loads from 12-20 units per semester. Cal Men's Volleyball is flexible for players and understand outstanding circumstances in which a player may not be able to attend some practices.
-          </p>
-          <h2 style={{fontWeight: 'bold'}}>
-            Tryouts
-          </h2>
-          <p>
-            Cal Men's Volleyball hosts tryouts in the early weeks of September. In Spring, Cal competes in the Northern California College Volleyball League against local rivals including Cal Poly SLO, UC Davis, and Stanford. The season concludes with the NCVF National Championships in early April, where Cal regularly finishes within the top 10 teams across the nation in Division I.
-          </p>
-          <h2 style={{fontWeight: 'bold'}}>
-            Club Dues
-          </h2>
-          <Table bordered={true}>
-            <thead>
-              <tr>
-                <th style={{width: '30%'}}>Duration</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Fall</th>
-                <td>$500</td>
-              </tr>
-              <tr>
-                <th scope="row">Winter</th>
-                <td>$500</td>
-              </tr>
-              <tr>
-                <th scope="row">Annual</th>
-                <td>$1000</td>
-              </tr>
-            </tbody>
-          </Table>
+          <Row>
+            <Col>
+              <Card>
+                <CardHeader>
+                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon="fa-solid fa-user-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    Commitment
+                  </CardTitle>
+                </CardHeader>
+                <CardBody style={{height: '100%'}}>
+                  Players must attend practices and tournaments on a regular basis to be considered for a starting position. However, Cal Men's Volleyball is flexible for players; we understand outstanding circumstances in which a player may not be able to attend some practices.
+                </CardBody>
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <CardHeader>
+                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon="fa-solid fa-earth" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    Travel
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  All regional matches and tournaments take place within the greater Northern California area, with the furthest destinations being San Luis Obispo and Fresno. The 3-day NCVF National Championships occur during the month of April and may be hosted anywhere in the continental United States.
+                </CardBody>
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <CardHeader>
+                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon="fa-solid fa-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    Tryouts
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  Cal Men's Volleyball hosts tryouts in the early weeks of September. Competitions begin in the spring in the NCVF League against local rivals including Cal Poly SLO, UC Davis, and Stanford. The season concludes with the NCVF National Championships in early April.
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+          <div>
+            <h2 style={{fontWeight: 'bold'}}>
+              Club Dues
+            </h2>
+            <Table bordered={true}>
+              <thead>
+                <tr>
+                  <th style={{width: '30%'}}>Duration</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Fall</th>
+                  <td>$500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Winter</th>
+                  <td>$500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Annual</th>
+                  <td>$1000</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
           <div style={{display: 'flex', flexDirection: 'column', gap: '5px', alignItems: 'center', marginTop: '50px'}}>
             <h2 style={{fontWeight: 'bold'}}>
               Get in Touch!

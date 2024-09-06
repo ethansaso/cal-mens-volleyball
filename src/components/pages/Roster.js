@@ -73,8 +73,11 @@ const Roster = () => {
 
     return (
         <div className="main">
-            <h1>Players</h1>
-            <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
+            <div className="search-card">
+                <h1>Players</h1>
+                <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
+            </div>
+            
             <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>
             {Object.keys(filteredPlayers).map((filename) => {
                 const imagePath = require(`../../assets/img/team-members/${filename}`);

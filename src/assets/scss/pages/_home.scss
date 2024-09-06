@@ -58,6 +58,7 @@
 .home-section {
     display: flex;
     height: 600px;
+    position: relative;
 
     @media (max-width: 767px) {
         height: calc(100vh - 66px);
@@ -66,6 +67,13 @@
 
 .home-section-text-wrapper {
     max-width: 900px;
+
+    @media (max-width: 767px) {
+        padding: 30px;
+        margin: -10px;
+        background-color: #041e428f;
+        border-radius: 1rem;
+    }
 }
 
 .home-text-container {
@@ -80,11 +88,12 @@
         background-color: #0008;
         color: #fff;
         z-index: 10;
+        justify-content: flex-end;
     }
 }
 
 .home-image-container {
-    background-color: aqua;
+    background-color: black;
     width: 600px;
     max-width: 50dvw;
     flex-shrink: 0;
@@ -101,6 +110,13 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+    object-position: 50% 0%;
+}
+
+.hi2 {
+    @media (max-width: 767px) {
+        object-position: 50% 50%;
+    }
 }
 
 .home-cta {
