@@ -4,6 +4,7 @@ import Reveal from "../util/Reveal";
 import { useEffect, useMemo, useState } from "react";
 import TeamMemberSearchBar from "../baubles/TeamMemberSearchBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTreeCity, faSchool } from "@fortawesome/free-solid-svg-icons";
 
 const Roster = () => {
     const [searchedTeamMemberName, setSearchedTeamMemberName] = useState('');
@@ -132,13 +133,13 @@ const Roster = () => {
                                         <div className="team-member-personal">
                                             {teamMembers[filename].hometown && (
                                                 <p className="team-member-personal-entry">
-                                                    <FontAwesomeIcon icon="fa-solid fa-tree-city" fixedWidth style={{marginRight: '5px'}}/>
+                                                    <FontAwesomeIcon icon={faTreeCity} fixedWidth style={{marginRight: '5px'}}/>
                                                     {teamMembers[filename].hometown}
                                                 </p>
                                             )}
                                             {teamMembers[filename].highschool && (
                                                 <p className="team-member-personal-entry" style={{marginBottom: 0}}>
-                                                    <FontAwesomeIcon icon="fa-solid fa-school" fixedWidth style={{marginRight: '5px'}}/>
+                                                    <FontAwesomeIcon icon={faSchool} fixedWidth style={{marginRight: '5px'}}/>
                                                     {teamMembers[filename].highschool}
                                                 </p>
                                             )}

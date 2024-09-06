@@ -1,4 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserClock, faEarth, faClock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { Button, Card, CardBody, CardFooter, CardHeader, CardTitle, Col, Row, Table } from "reactstrap";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
@@ -17,7 +19,7 @@ const NewPlayers = () => {
               <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon="fa-solid fa-user-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    <FontAwesomeIcon icon={faUserClock} fixedWidth size="sm" style={{marginRight: '5px'}}/>
                     Commitment
                   </CardTitle>
                 </CardHeader>
@@ -30,7 +32,7 @@ const NewPlayers = () => {
               <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon="fa-solid fa-earth" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    <FontAwesomeIcon icon={faEarth} fixedWidth size="sm" style={{marginRight: '5px'}}/>
                     Travel
                   </CardTitle>
                 </CardHeader>
@@ -43,7 +45,7 @@ const NewPlayers = () => {
               <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon="fa-solid fa-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                    <FontAwesomeIcon icon={faClock} fixedWidth size="sm" style={{marginRight: '5px'}}/>
                     Tryouts
                   </CardTitle>
                 </CardHeader>
@@ -95,15 +97,15 @@ const NewPlayers = () => {
             </h2>
             <div style={{display: 'flex', gap: '5px', width: '100%', justifyContent: 'center'}}>
               <Button className="social-button" color="warning" href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon="fa-solid fa-envelope" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
+                <FontAwesomeIcon icon={faEnvelope} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Club Email
               </Button>
               <Button className="social-button" color="warning" href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon="fa-brands fa-instagram" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
+                <FontAwesomeIcon icon={faInstagram} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Instagram
               </Button>
               <Button className="social-button" color="warning" href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon="fa-brands fa-facebook" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
+                <FontAwesomeIcon icon={faFacebook} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Facebook
               </Button>
             </div>

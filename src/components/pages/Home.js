@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CalLogo from "../../assets/img/cal-logo.png"
-import i1 from "../../assets/img/action-shots/i2.jpg"
-import i2 from "../../assets/img/action-shots/i3.jpg"
+import { faVolleyball } from "@fortawesome/free-solid-svg-icons";
+import CalLogo from "../../assets/img/cal-logo.png";
+import i1 from "../../assets/img/action-shots/i2.jpg";
+import i2 from "../../assets/img/action-shots/i3.jpg";
 import { Button } from "reactstrap";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
           </div>
           <div className="icon-container">
             {[...Array(8)].map((_, i) => (
-              <FontAwesomeIcon className="vb-spin" key={i} icon="fa-solid fa-volleyball" fixedWidth />
+              <FontAwesomeIcon className="vb-spin" key={i} icon={faVolleyball} fixedWidth />
             ))}
           </div>
         </div>
@@ -63,16 +64,6 @@ const Home = () => {
           </Button>
         </div>
       </div>
-      {/*
-      <div className="main">
-        <h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </h4>
-      </div>
-      */}
     </div>
   )
 }

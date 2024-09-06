@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Row, Table } from "reactstrap";
-
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
 const CurrentPlayers = () => {

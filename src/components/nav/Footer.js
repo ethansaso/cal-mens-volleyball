@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
@@ -39,11 +40,11 @@ const Footer = () => {
                             <h4 className="footer-header">Socials</h4>
                             <div className="footer-social-links">
                                 <a href="https://www.instagram.com/calclubvolleyball/" style={{color: "black"}}>
-                                    <FontAwesomeIcon icon="fa-brands fa-instagram" fixedWidth size="lg" style={{marginRight: '5px'}} />
+                                    <FontAwesomeIcon icon={faInstagram} fixedWidth size="lg" style={{marginRight: '5px'}} />
                                     Instagram
                                 </a>
                                 <a href="https://www.facebook.com/calclubvball/" style={{color: "black"}}>
-                                    <FontAwesomeIcon icon="fa-brands fa-facebook" fixedWidth size="lg" style={{marginRight: '5px'}} />
+                                    <FontAwesomeIcon icon={faFacebook} fixedWidth size="lg" style={{marginRight: '5px'}} />
                                     Facebook
                                 </a>
                             </div>
