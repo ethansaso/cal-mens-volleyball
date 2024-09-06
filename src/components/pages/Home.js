@@ -26,7 +26,7 @@ const Home = () => {
           <div className="home-section-content">
             <div className="home-text-container">
               <div className="home-section-text-wrapper">
-                <h1 className="display-5" style={{fontWeight: 'bold'}}>
+                <h1 className="display-5 home-text-header" style={{fontWeight: 'bold'}}>
                   Six-time <span style={{color: '#ffc72c'}}>national club champions</span>.
                 </h1>
                 <h4>
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
             <div className="home-text-container">
               <div className="home-section-text-wrapper">
-                <h1 className="display-5" style={{fontWeight: 'bold'}}>
+                <h1 className="display-5 home-text-header" style={{fontWeight: 'bold'}}>
                   Official <span style={{color: '#ffc72c'}}>Division I competitors</span>.
                 </h1>
                 <h4>
