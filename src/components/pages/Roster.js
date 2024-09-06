@@ -81,7 +81,7 @@ const Roster = () => {
             </header>
             <main className="main">
                 <div className="search-card">
-                    <h1 style={{marginBottom: '1rem'}}>Players</h1>
+                    <h1 className="search-title">Players</h1>
                     <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
                 </div>
                 

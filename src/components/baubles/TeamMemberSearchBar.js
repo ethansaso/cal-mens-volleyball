@@ -57,7 +57,6 @@ const TeamMemberSearchBar = ({ onSearch, teamMembers, ignoredPositions }) => {
                         />
                         </InputGroup>
                     </FormGroup>
-                    {' '}
                 </Col>
                 <Col xs="12" sm="6" md="3">
                     <FormGroup className="team-member-search-dropdown">

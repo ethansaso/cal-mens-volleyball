@@ -18,39 +18,42 @@ const NewPlayers = () => {
             <Col sm="12" md="6" lg="4" className="new-info-col">
               <Card className="new-info-card">
                 <CardHeader>
-                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon={faUserClock} fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                  <CardTitle tag="h2" style={{margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon={faUserClock} fixedWidth size="sm" style={{marginRight: '0.5rem', color: '#fb0'}}/>
                     Commitment
                   </CardTitle>
                 </CardHeader>
                 <CardBody style={{height: '100%'}}>
-                  Players must attend practices and tournaments on a regular basis to be considered for a starting position. However, Cal Men's Volleyball is flexible for players; we understand outstanding circumstances in which a player may not be able to attend some practices.
+                  <p>Players must attend practices and tournaments on a regular basis to be considered for a starting position.</p>
+                  <p>However, Cal Men's Volleyball is flexible for players; we understand outstanding circumstances in which a player may not be able to attend some practices.</p>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" md="6" lg="4" className="new-info-col">
               <Card className="new-info-card">
                 <CardHeader>
-                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon={faEarth} fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                  <CardTitle tag="h2" style={{margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon={faEarth} fixedWidth size="sm" style={{marginRight: '0.5rem', color: '#fb0'}}/>
                     Travel
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
-                  All regional matches and tournaments take place within the greater Northern California area, with the furthest destinations being San Luis Obispo and Fresno. The 3-day NCVF National Championships occur during the month of April and may be hosted anywhere in the continental United States.
+                  <p>All regional matches and tournaments take place within the greater Northern California area, with the furthest destinations being San Luis Obispo and Fresno.</p>
+                  <p>The 3-day NCVF National Championships occur during the month of April and may be hosted anywhere in the continental United States.</p>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" lg="4" className="new-info-col">
               <Card className="new-info-card">
                 <CardHeader>
-                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
-                    <FontAwesomeIcon icon={faClock} fixedWidth size="sm" style={{marginRight: '5px'}}/>
+                  <CardTitle tag="h2" style={{margin: '10px 0px 5px 0px'}}>
+                    <FontAwesomeIcon icon={faClock} fixedWidth size="sm" style={{marginRight: '0.5rem', color: '#fb0'}}/>
                     Tryouts
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
-                  Cal Men's Volleyball hosts tryouts in the early weeks of September. Competitions begin in the spring in the NCVF League against local rivals including Cal Poly SLO, UC Davis, and Stanford. The season concludes with the NCVF National Championships in early April.
+                  <p>Cal Men's Volleyball hosts tryouts in the early weeks of September. </p>
+                  <p>Competitions begin in the spring in the NCVF League against local rivals including Cal Poly SLO, UC Davis, and Stanford. The season concludes with the NCVF National Championships in early April.</p>
                 </CardBody>
               </Card>
             </Col>
@@ -59,7 +62,7 @@ const NewPlayers = () => {
             <Col>
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
+                  <CardTitle tag="h2" style={{margin: '10px 0px 5px 0px'}}>
                     Club Dues
                   </CardTitle>
                 </CardHeader>
