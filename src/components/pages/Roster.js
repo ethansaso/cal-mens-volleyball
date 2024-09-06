@@ -72,96 +72,107 @@ const Roster = () => {
     };
 
     return (
-        <div className="main">
-            <div className="search-card">
-                <h1>Players</h1>
-                <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
-            </div>
-            
-            <p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>
-            {Object.keys(filteredPlayers).map((filename) => {
-                const imagePath = require(`../../assets/img/team-members/${filename}`);
-
-                let adjustedPlayerPositions = null;
-                let adjustedYear = null;
-
-                if (teamMembers[filename].positions) {
-                    adjustedPlayerPositions = teamMembers[filename].positions;
-                    adjustedPlayerPositions = adjustedPlayerPositions.map((position) => (windowWidth > 767 ? position : shortenedPositions[position] ?? position)).join('/');
-                    console.log(adjustedPlayerPositions, teamMembers[filename].name)
-                } else {
-                    adjustedPlayerPositions = 'Position unknown -- please contact staff'
-                }
+        <>
+            <header className="roster-header-container">
+                <h1 className="header-banner-content display-1">
+                    Team Roster
+                </h1>
+            </header>
+            <main className="main">
+                <div className="search-card">
+                    <h1 style={{marginBottom: '1rem'}}>Players</h1>
+                    <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
+                </div>
                 
-                if (teamMembers[filename].year) {
-                    adjustedYear = windowWidth > 767 ? teamMembers[filename].year : shortenedYears[teamMembers[filename].year] ?? teamMembers[filename].year
-                } else {
-                    adjustedYear = 'Year unknown -- please contact staff'
-                }
+                {/*<p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>*/}
+                {Object.keys(filteredPlayers).length > 0 ? (
+                    Object.keys(filteredPlayers).map((filename) => {
+                        const imagePath = require(`../../assets/img/team-members/${filename}`);
 
-                return (
-                    <Reveal width="100%">
-                        <Card className="team-member-card" key={filename}>
-                            <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
-                            <CardBody className="team-member-details">
-                                <div className="team-member-top">
+                        let adjustedPlayerPositions = null;
+                        let adjustedYear = null;
+
+                        if (teamMembers[filename].positions) {
+                            adjustedPlayerPositions = teamMembers[filename].positions;
+                            adjustedPlayerPositions = adjustedPlayerPositions.map((position) => (windowWidth > 767 ? position : shortenedPositions[position] ?? position)).join('/');
+                            console.log(adjustedPlayerPositions, teamMembers[filename].name)
+                        } else {
+                            adjustedPlayerPositions = 'Position unknown -- please contact staff'
+                        }
+                        
+                        if (teamMembers[filename].year) {
+                            adjustedYear = windowWidth > 767 ? teamMembers[filename].year : shortenedYears[teamMembers[filename].year] ?? teamMembers[filename].year
+                        } else {
+                            adjustedYear = 'Year unknown -- please contact staff'
+                        }
+
+                        return (
+                            <Reveal width="100%">
+                                <Card className="team-member-card" key={filename}>
+                                    <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
+                                    <CardBody className="team-member-details">
+                                        <div className="team-member-top">
+                                            <div className="team-member-ul">
+                                                <div className="team-member-primary">
+                                                    <div className="team-member-primary-top">
+                                                        <p style={{fontWeight: '700', marginBottom: '5px'}}>{adjustedPlayerPositions}</p>
+                                                        <p style={{marginLeft: '5px', marginBottom: '5px', marginRight: '-2px'}}>{teamMembers[filename].height ? "| " + teamMembers[filename].height : ""}</p>
+                                                        <p className="team-member-year" style={{marginLeft: '5px', marginBottom: '5px', color: 'gray'}}>{windowWidth <= 767 && ("| " + adjustedYear)}</p>
+                                                    </div>
+                                                    <div className="team-member-primary-bottom">
+                                                        <h2>
+                                                            <span className="roster-number">{teamMembers[filename].number}</span>
+                                                            <span className="player-name" style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</span>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="team-member-year">{windowWidth > 767 && (adjustedYear)}</div>
+                                        </div>
+                                        <div className="team-member-personal">
+                                            {teamMembers[filename].hometown && (
+                                                <p className="team-member-personal-entry">
+                                                    <FontAwesomeIcon icon="fa-solid fa-tree-city" fixedWidth style={{marginRight: '5px'}}/>
+                                                    {teamMembers[filename].hometown}
+                                                </p>
+                                            )}
+                                            {teamMembers[filename].highschool && (
+                                                <p className="team-member-personal-entry" style={{marginBottom: 0}}>
+                                                    <FontAwesomeIcon icon="fa-solid fa-school" fixedWidth style={{marginRight: '5px'}}/>
+                                                    {teamMembers[filename].highschool}
+                                                </p>
+                                            )}
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            </Reveal>
+                        );
+                    })
+                ) : (
+                    <h4 style={{marginTop: '10px', marginBottom: '60px'}}>No players found for these criteria.</h4>
+                )}
+                <h1 style={{marginTop: '40px'}}>Staff</h1>
+                {Object.keys(staffMembers).map((filename) => {
+                    const imagePath = require(`../../assets/img/team-members/${filename}`);
+
+                    return (
+                        <Reveal width="100%">
+                            <Card className="team-member-card" key={filename}>
+                                <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
+                                <CardBody className="team-member-details">
                                     <div className="team-member-ul">
                                         <div className="team-member-primary">
-                                            <div className="team-member-primary-top">
-                                                <p style={{fontWeight: '700', marginBottom: '5px'}}>{adjustedPlayerPositions}</p>
-                                                <p style={{marginLeft: '5px', marginBottom: '5px', marginRight: '-2px'}}>{teamMembers[filename].height ? "| " + teamMembers[filename].height : ""}</p>
-                                                <p className="team-member-year" style={{marginLeft: '5px', marginBottom: '5px', color: 'gray'}}>{windowWidth <= 767 && ("| " + adjustedYear)}</p>
-                                            </div>
-                                            <div className="team-member-primary-bottom">
-                                                <h2>
-                                                    <span className="roster-number">{teamMembers[filename].number}</span>
-                                                    <span className="player-name" style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</span>
-                                                </h2>
-                                            </div>
+                                            <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
+                                            <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
                                         </div>
                                     </div>
-                                    <div className="team-member-year">{windowWidth > 767 && (adjustedYear)}</div>
-                                </div>
-                                <div className="team-member-personal">
-                                    {teamMembers[filename].hometown && (
-                                        <p className="team-member-personal-entry">
-                                            <FontAwesomeIcon icon="fa-solid fa-tree-city" fixedWidth style={{marginRight: '5px'}}/>
-                                            {teamMembers[filename].hometown}
-                                        </p>
-                                    )}
-                                    {teamMembers[filename].highschool && (
-                                        <p className="team-member-personal-entry" style={{marginBottom: 0}}>
-                                            <FontAwesomeIcon icon="fa-solid fa-school" fixedWidth style={{marginRight: '5px'}}/>
-                                            {teamMembers[filename].highschool}
-                                        </p>
-                                    )}
-                                </div>
-                            </CardBody>
-                        </Card>
-                    </Reveal>
-                );
-            })}
-            <h1 style={{marginTop: '40px'}}>Staff</h1>
-            {Object.keys(staffMembers).map((filename) => {
-                const imagePath = require(`../../assets/img/team-members/${filename}`);
-
-                return (
-                    <Reveal width="100%">
-                        <Card className="team-member-card" key={filename}>
-                            <CardImg className="team-member-img" src={imagePath} alt={filename.replace(/\.[^/.]+$/, "")}/>
-                            <CardBody className="team-member-details">
-                                <div className="team-member-ul">
-                                    <div className="team-member-primary">
-                                        <p style={{fontWeight: '700', marginBottom: '5px'}}>{teamMembers[filename].positions?.join('/') ?? 'Position unknown -- please contact staff'}</p>
-                                        <h2 style={{fontWeight: 'bold'}}>{teamMembers[filename].name ?? 'Name unknown -- please contact staff'}</h2>
-                                    </div>
-                                </div>
-                            </CardBody>
-                        </Card>
-                    </Reveal>
-                );
-            })}
-        </div>
+                                </CardBody>
+                            </Card>
+                        </Reveal>
+                    );
+                })}
+            </main>
+        </>
     )
 }
 

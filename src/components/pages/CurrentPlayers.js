@@ -7,7 +7,7 @@ const CurrentPlayers = () => {
     return (
       <>
         <header className="current-players-header-container">
-          <h1 className="more-header-content display-1">
+          <h1 className="header-banner-content display-1">
             Current Players
           </h1>
         </header>
@@ -16,7 +16,7 @@ const CurrentPlayers = () => {
             Placeholder
           </h2>
           <p>
-            Lorem ipsum.
+            No information
           </p>
         </main>
       </>

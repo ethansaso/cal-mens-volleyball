@@ -1,0 +1,59 @@
+.header-banner-content {    
+    font-family: "Blockletter";
+    color: $cal-gold-color;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.new-players-header-container {
+    width: 100%;
+    background: linear-gradient(#0009, #0009), url(../../img/teamsplash2.jpg);
+    background-size: cover;
+    background-position: 50% 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 180px;
+    position: relative;
+}
+
+.donations-header-container {
+    width: 100%;
+    background: linear-gradient(#0009, #0009), url(../../img/teamsplash1.jpg);
+    background-size: cover;
+    background-position: 50% 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 180px;
+    position: relative;
+}
+
+.current-players-header-container {
+    width: 100%;
+    background: linear-gradient(#0009, #0009), url(../../img/justinsplash2.jpg);
+    background-size: cover;
+    background-position: 50% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 180px;
+    position: relative;
+}
+
+.roster-header-container {
+    width: 100%;
+    background: linear-gradient(#0009, #0009), url(../../img/teamsplash3.jpg);
+    background-size: cover;
+    background-position: 50% 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80px + 10dvw);
+    max-height: 180px;
+    position: relative;
+}

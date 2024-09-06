@@ -1,0 +1,9 @@
+.social-button {
+    @media (max-width: 415px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        flex-grow: 1;
+    }
+}

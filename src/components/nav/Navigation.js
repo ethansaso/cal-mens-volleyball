@@ -44,7 +44,7 @@ function Navigation(args) {
           <NavItem>
             <NavLink href={path_prefix + "roster"}>
               <div className="nav-text">
-                Meet the Team
+                Team Roster
               </div>
             </NavLink>
           </NavItem>

@@ -7,14 +7,14 @@ const NewPlayers = () => {
     return (
       <>
         <header className="new-players-header-container">
-          <h1 className="more-header-content display-1">
+          <h1 className="header-banner-content display-1">
             Info - New Players
           </h1>
         </header>
         <main className="main">
           <Row>
-            <Col>
-              <Card>
+            <Col sm="12" md="6" lg="4" className="new-info-col">
+              <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
                     <FontAwesomeIcon icon="fa-solid fa-user-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
@@ -26,8 +26,8 @@ const NewPlayers = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col>
-              <Card>
+            <Col sm="12" md="6" lg="4" className="new-info-col">
+              <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
                     <FontAwesomeIcon icon="fa-solid fa-earth" fixedWidth size="sm" style={{marginRight: '5px'}}/>
@@ -39,8 +39,8 @@ const NewPlayers = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col>
-              <Card>
+            <Col sm="12" lg="4" className="new-info-col">
+              <Card className="new-info-card">
                 <CardHeader>
                   <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
                     <FontAwesomeIcon icon="fa-solid fa-clock" fixedWidth size="sm" style={{marginRight: '5px'}}/>
@@ -53,47 +53,56 @@ const NewPlayers = () => {
               </Card>
             </Col>
           </Row>
-          <div>
-            <h2 style={{fontWeight: 'bold'}}>
-              Club Dues
-            </h2>
-            <Table bordered={true}>
-              <thead>
-                <tr>
-                  <th style={{width: '30%'}}>Duration</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Fall</th>
-                  <td>$500</td>
-                </tr>
-                <tr>
-                  <th scope="row">Winter</th>
-                  <td>$500</td>
-                </tr>
-                <tr>
-                  <th scope="row">Annual</th>
-                  <td>$1000</td>
-                </tr>
-              </tbody>
-            </Table>
-          </div>
+          <Row>
+            <Col>
+              <Card>
+                <CardHeader>
+                  <CardTitle tag="h2" style={{fontWeight: 'bold', margin: '10px 0px 5px 0px'}}>
+                    Club Dues
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <Table bordered={true}>
+                    <thead>
+                      <tr>
+                        <th style={{width: '30%'}}>Duration</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Fall</th>
+                        <td>$500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Winter</th>
+                        <td>$500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Annual</th>
+                        <td>$1000</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+          
           <div style={{display: 'flex', flexDirection: 'column', gap: '5px', alignItems: 'center', marginTop: '50px'}}>
             <h2 style={{fontWeight: 'bold'}}>
               Get in Touch!
             </h2>
-            <div style={{display: 'flex', gap: '5px'}}>
-              <Button color="warning" href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
+            <div style={{display: 'flex', gap: '5px', width: '100%', justifyContent: 'center'}}>
+              <Button className="social-button" color="warning" href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-solid fa-envelope" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Club Email
               </Button>
-              <Button color="warning" href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
+              <Button className="social-button" color="warning" href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-brands fa-instagram" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Instagram
               </Button>
-              <Button color="warning" href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
+              <Button className="social-button" color="warning" href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
                 <FontAwesomeIcon icon="fa-brands fa-facebook" fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
                 Facebook
               </Button>
