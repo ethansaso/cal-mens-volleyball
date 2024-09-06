@@ -55,6 +55,10 @@
 
 .navbar-dropdown {
     position: relative;
+
+    @media (max-width: 767px) {
+        width: 50%;
+    }
 }
 
 .navbar-dropdown-menu {
@@ -76,5 +80,12 @@
     &:hover {
         background-color: #041e42 !important;
         color: $cal-gold-color !important;
+    }
+}
+
+.navbar-collapse {
+    @media (max-width: 767px) {
+        position: relative;
+        top: 15px;
     }
 }
