@@ -80,10 +80,10 @@ const Roster = () => {
                 </h1>
             </header>
             <main className="main">
-                <div className="search-card">
+                <Card className="search-card">
                     <h1 className="search-title">Players</h1>
                     <TeamMemberSearchBar onSearch={handleSearch} teamMembers={teamMembers} ignoredPositions={ignoredPositions}/>
-                </div>
+                </Card>
                 
                 {/*<p className="search-result-count">{Object.keys(filteredPlayers).length} results</p>*/}
                 {Object.keys(filteredPlayers).length > 0 ? (
@@ -152,7 +152,9 @@ const Roster = () => {
                 ) : (
                     <h4 style={{marginTop: '10px', marginBottom: '60px'}}>No players found for these criteria.</h4>
                 )}
-                <h1 style={{marginTop: '40px'}}>Staff</h1>
+                <Card className="staff-card">
+                    <h1 className="staff-title">Staff</h1>
+                </Card>
                 {Object.keys(staffMembers).map((filename) => {
                     const imagePath = require(`../../assets/img/team-members/${filename}`);
 
