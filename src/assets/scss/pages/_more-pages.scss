@@ -5,3 +5,21 @@
 .new-info-col {
     margin-bottom: 20px;
 }
+
+.new-info-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-top: 45px;
+
+    @media (max-width: 767px) {
+        margin-top: 30px;
+    }
+}
+
+.new-info-cta-card {
+    background-color: #041e42;
+    color: white;
+    padding: 20px;
+}

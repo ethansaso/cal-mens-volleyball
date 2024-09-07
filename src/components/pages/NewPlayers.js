@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserClock, faEarth, faClock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { Button, Card, CardBody, CardFooter, CardHeader, CardTitle, Col, Row, Table } from "reactstrap";
+import { Button, Card, CardBody, CardHeader, CardTitle, Col, Row, Table } from "reactstrap";
 
 const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
 
@@ -94,24 +93,18 @@ const NewPlayers = () => {
             </Col>
           </Row>
           
-          <div style={{display: 'flex', flexDirection: 'column', gap: '5px', alignItems: 'center', marginTop: '50px'}}>
-            <h2 style={{fontWeight: 'bold'}}>
-              Get in Touch!
-            </h2>
-            <div style={{display: 'flex', gap: '5px', width: '100%', justifyContent: 'center'}}>
-              <Button className="social-button" color="warning" href="mailto:cal.mensvb@gmail.com" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon={faEnvelope} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
-                Club Email
-              </Button>
-              <Button className="social-button" color="warning" href="https://www.instagram.com/calclubvolleyball/" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon={faInstagram} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
-                Instagram
-              </Button>
-              <Button className="social-button" color="warning" href="https://www.facebook.com/calclubvball/" style={{textDecoration: 'none'}}>
-                <FontAwesomeIcon icon={faFacebook} fixedWidth style={{marginRight: '5px', position: 'relative'}}/>
-                Facebook
-              </Button>
-            </div>
+          <div className="new-info-cta">
+            <Card className="new-info-cta-card">
+              <h2 style={{fontWeight: 'bold', marginBottom: '15px'}}>
+                Interested? Get in Touch!
+              </h2>
+              <div style={{display: 'flex', gap: '5px', justifyContent: 'center'}}>
+                <Button href="mailto:cal.mensvb@gmail.com" color="warning" style={{padding: '7px 70px', display: 'flex', alignItems: 'center'}}>
+                <FontAwesomeIcon icon={faEnvelope} fixedWidth size="xl" style={{marginRight: '0.5rem'}}/>
+                  <h2 style={{fontFamily: 'Blockletter', margin: 0}}>EMAIL</h2>
+                </Button>
+              </div>
+            </Card>
           </div>
           
         </main>

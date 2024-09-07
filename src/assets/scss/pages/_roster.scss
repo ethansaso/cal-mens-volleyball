@@ -4,7 +4,6 @@
     flex-direction: row;
     padding: 0;
     margin: 10px 0px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
     @media (max-width: 767px) {
         height: auto;
@@ -92,17 +91,16 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    padding-bottom: 2px;
     margin-right: 8px;
     text-align: center;
     background-color: #041e42;
+    padding-left: 0.125rem;
     color: $cal-gold-color;
+    font-family: 'Blockletter';
 
     @media (max-width: 767px) {
         width: 30px;
         height: 30px;
-        font-size: 1.125rem;
-        padding-bottom: 0px;
     }
 }
 
