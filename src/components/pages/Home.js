@@ -59,7 +59,7 @@ const Home = () => {
         <div className="home-cta">
           <h1 className="display-4" style={{fontWeight: 'bold'}}>Become a part of <span style={{color: '#ffc72c'}}>Cal's history.</span></h1>
           <h4 style={{marginBottom: '20px'}}>Get the latest tryout & event details for Cal Men's Volleyball.</h4>
-          <Button href="forms.gle/rr886m2Fgmikk4WW6" color="warning" style={{padding: '7px 70px'}}>
+          <Button href="https://forms.gle/rr886m2Fgmikk4WW6" color="warning" className="cta-button">
             <h2 style={{fontFamily: 'Blockletter', margin: 0}}>SIGN UP</h2>
           </Button>
         </div>
