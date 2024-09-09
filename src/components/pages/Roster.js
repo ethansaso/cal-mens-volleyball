@@ -74,7 +74,7 @@ const Roster = () => {
 
     return (
         <>
-            <header className="roster-header-container">
+            <header className="roster-header-container header-container">
                 <h1 className="header-banner-content display-1">
                     Team Roster
                 </h1>

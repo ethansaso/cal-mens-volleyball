@@ -3,7 +3,7 @@ const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleybal
 const CurrentPlayers = () => {
     return (
       <>
-        <header className="current-players-header-container">
+        <header className="current-players-header-container header-container">
           <h1 className="header-banner-content display-1">
             Current Players
           </h1>

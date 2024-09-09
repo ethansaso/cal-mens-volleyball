@@ -6,7 +6,7 @@ const NewPlayers = () => {
 
   return (
     <>
-      <header className="new-players-header-container">
+      <header className="new-players-header-container header-container">
         <h1 className="header-banner-content display-1">
           Info - New Players
         </h1>

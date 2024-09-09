@@ -4,14 +4,14 @@ import BigGiveLogo from "../../assets/img/big-give-logo.png"
 const Donate = () => {
     return (
       <>
-        <header className="donations-header-container">
+        <header className="donations-header-container header-container">
           <h1 className="header-banner-content display-1">
             Donate
           </h1>
         </header>
         <main className="main">
-          <Row>
-            <Col sm="12" lg="6">
+          <Row className="gy-4">
+            <Col sm="12" lg="6" mt-5>
                 <Card>
                   <CardHeader style={{background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media.istockphoto.com/id/1331003550/photo/on-campus-at-uc-berkley.jpg?s=612x612&w=0&k=20&c=5kFzYWf-JbBY6oYvqcmOavd2-GewcxL8NzqBbxUSMUA=)', height: '250px', backgroundSize: '100% auto', backgroundPosition: '0% 60%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <a href="https://givingday.berkeley.edu/">
