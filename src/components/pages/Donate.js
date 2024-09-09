@@ -19,8 +19,8 @@ const Donate = () => {
                     </a>
                   </CardHeader>
                   <CardBody style={{padding: '20px'}}>
-                    <h4>The Big Give is UC Berkeley's biggest donation campaign.</h4>
-                    <div>It runs every year in second half of March and is the single largest source of funding for Cal Men's Volleyball.</div>
+                    <h4>UC Berkeley's biggest donation campaign.</h4>
+                    <div>The Big Give runs every year in second half of March and is the single largest source of funding for Cal Men's Volleyball.</div>
                   </CardBody>
                   <CardFooter style={{display: 'flex', justifyContent: 'center', padding: '15px'}}>
                     <Button href="https://givingday.berkeley.edu/" color="warning" className="cta-button">
@@ -35,11 +35,11 @@ const Donate = () => {
             <Col sm="12" lg="6">
               <Card>
                 <CardHeader style={{background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.shutterstock.com/image-photo/berkeley-landmark-drone-evening-600nw-1633716853.jpg)', height: '250px', backgroundSize: '100% auto', backgroundPosition: '0% 20%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <h1 className="display-1" style={{fontFamily: 'Blockletter'}}>Donations</h1>
+                  <h1 className="display-1" style={{fontFamily: 'Blockletter', maxWidth: '70%'}}>Donations</h1>
                 </CardHeader>
                 <CardBody style={{padding: '20px'}}>
-                  <h4>Support the team by making a personal donation.</h4>
-                  <div>Get in touch with leadership below if you'd like to financially support the team.</div>
+                  <h4>Personally support the team.</h4>
+                  <div>Get in touch with leadership below if you'd like to support the team by making a donation.</div>
                 </CardBody>
                 <CardFooter style={{display: 'flex', justifyContent: 'center', padding: '15px'}}>
                   <Button href="mailto:cal.mensvb@gmail.com" color="warning" className="cta-button">
