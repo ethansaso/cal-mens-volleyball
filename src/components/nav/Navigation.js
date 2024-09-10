@@ -106,6 +106,7 @@ function Navigation(args) {
                   </div>
                 </NavLink>
               </DropdownItem>
+              {/*
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}current-players`}>
                   <div className="nav-text">
@@ -113,6 +114,7 @@ function Navigation(args) {
                   </div>
                 </NavLink>
               </DropdownItem>
+              */}
               <DropdownItem className="navbar-dropdown-item">
                 <NavLink href={`${path_prefix}donations`}>
                   <div className="nav-text">
