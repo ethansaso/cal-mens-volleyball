@@ -105,7 +105,6 @@ const NewPlayers = () => {
             </div>
           </Card>
         </div>
-        
       </main>
     </>
   )
