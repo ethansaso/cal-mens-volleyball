@@ -1,5 +1,6 @@
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,60 +12,60 @@ const Footer = () => {
             <div className="footer-nav-links">
               <div className="footer-nav-column">
                 <p className="footer-text">
-                  <a
-                    href={"/"}
+                  <Link
+                    to={"/"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     Home
-                  </a>
+                  </Link>
                 </p>
                 <p className="footer-text">
-                  <a
-                    href={"/schedule"}
+                  <Link
+                    to={"/schedule"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     Schedule
-                  </a>
+                  </Link>
                 </p>
                 <p className="footer-text">
-                  <a
-                    href={"/roster"}
+                  <Link
+                    to={"/roster"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     Roster
-                  </a>
+                  </Link>
                 </p>
               </div>
               <div className="footer-nav-column">
                 <p className="footer-text">
-                  <a
-                    href={"/new-players"}
+                  <Link
+                    to={"/new-players"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     New Players
-                  </a>
+                  </Link>
                 </p>
                 <p className="footer-text">
-                  <a
-                    href={"/current-players"}
+                  <Link
+                    to={"/current-players"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     Current Players
-                  </a>
+                  </Link>
                 </p>
                 <p className="footer-text">
-                  <a
-                    href={"/donations"}
+                  <Link
+                    to={"/donations"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
                     Donate
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

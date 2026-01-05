@@ -1,7 +1,7 @@
 import {
   Navigate,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
 } from "react-router-dom";
 import "./App.css";
@@ -23,11 +23,11 @@ function App() {
       <div className="content">
         <Routes>
           <Route exact path={"/"} element={<Home />} />
-          <Route path={"donations"} element={<Donate />} />
-          <Route path={"new-players"} element={<NewPlayers />} />
-          <Route path={"current-players"} element={<CurrentPlayers />} />
-          <Route path={"roster"} element={<Roster />} />
-          <Route path={"schedule"} element={<Schedule />} />
+          <Route path={"/donations"} element={<Donate />} />
+          <Route path={"/new-players"} element={<NewPlayers />} />
+          <Route path={"/current-players"} element={<CurrentPlayers />} />
+          <Route path={"/roster"} element={<Roster />} />
+          <Route path={"/schedule"} element={<Schedule />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>

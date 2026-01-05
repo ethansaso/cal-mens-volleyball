@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Collapse,
   DropdownItem,
@@ -23,7 +24,8 @@ function Navigation(args) {
   return (
     <Navbar expand="md" color="dark" dark>
       <NavbarBrand
-        href={"/"}
+        tag={Link}
+        to={"/"}
         style={{ padding: 0, height: "100%", display: "flex" }}
       >
         <img className="cal-logo" src={CalLogo} alt="Cal Logo" />
@@ -32,12 +34,12 @@ function Navigation(args) {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <NavLink href={"/schedule"}>
+            <NavLink tag={Link} to={"/schedule"}>
               <div className="nav-text">Game Schedule</div>
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href={"/roster"}>
+            <NavLink tag={Link} to={"/roster"}>
               <div className="nav-text">Team Roster</div>
             </NavLink>
           </NavItem>
@@ -95,13 +97,13 @@ function Navigation(args) {
               aria-labelledby="optionsDropdownButton"
             >
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href={"/new-players"}>
+                <NavLink tag={Link} to={"/new-players"}>
                   <div className="nav-text">New Players</div>
                 </NavLink>
               </DropdownItem>
               {/*
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href={"/current-players"}>
+                <NavLink tag={Link} to={"/current-players"}>
                   <div className="nav-text">
                     Current Players
                   </div>
@@ -109,7 +111,7 @@ function Navigation(args) {
               </DropdownItem>
               */}
               <DropdownItem className="navbar-dropdown-item">
-                <NavLink href={"/donations"}>
+                <NavLink tag={Link} to={"/donations"}>
                   <div className="nav-text">Donate</div>
                 </NavLink>
               </DropdownItem>
