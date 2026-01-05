@@ -1,9 +1,6 @@
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const path_prefix =
-  process.env.NODE_ENV === "production" ? "/cal-mens-volleyball/" : "/";
-
 const Footer = () => {
   return (
     <>
@@ -15,7 +12,7 @@ const Footer = () => {
               <div className="footer-nav-column">
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}`}
+                    href={"/"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
@@ -24,7 +21,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}schedule`}
+                    href={"/schedule"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
@@ -33,7 +30,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}roster`}
+                    href={"/roster"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
@@ -44,7 +41,7 @@ const Footer = () => {
               <div className="footer-nav-column">
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}new-players`}
+                    href={"/new-players"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
@@ -53,7 +50,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}current-players`}
+                    href={"/current-players"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >
@@ -62,7 +59,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-text">
                   <a
-                    href={`${path_prefix}donations`}
+                    href={"/donations"}
                     className="footer-link"
                     style={{ color: "black" }}
                   >

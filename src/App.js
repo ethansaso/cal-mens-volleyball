@@ -15,8 +15,6 @@ import NewPlayers from "./components/pages/NewPlayers";
 import Roster from "./components/pages/Roster";
 import Schedule from "./components/pages/Schedule";
 
-const path_prefix = "/";
-
 function App() {
   return (
     <div className="layout">
@@ -40,7 +38,7 @@ function App() {
 
 function AppWrapper() {
   return (
-    <Router basename={path_prefix}>
+    <Router>
       <App />
     </Router>
   );
