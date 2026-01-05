@@ -1,17 +1,23 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from "react-router-dom"
-import VarsitySwiper from "./components/nav/VarsitySwiper";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+import "./App.css";
+import Footer from "./components/nav/Footer";
 import Navigation from "./components/nav/Navigation";
+import VarsitySwiper from "./components/nav/VarsitySwiper";
+import CurrentPlayers from "./components/pages/CurrentPlayers";
+import Donate from "./components/pages/Donate";
 import Home from "./components/pages/Home";
+import NewPlayers from "./components/pages/NewPlayers";
 import Roster from "./components/pages/Roster";
 import Schedule from "./components/pages/Schedule";
-import './App.css';
-import Footer from "./components/nav/Footer";
-import Donate from "./components/pages/Donate";
-import NewPlayers from "./components/pages/NewPlayers";
-import CurrentPlayers from "./components/pages/CurrentPlayers";
 
-const path_prefix = process.env.NODE_ENV === 'production' ? "/cal-mens-volleyball/" : '/'
+const path_prefix = "/";
 
 function App() {
   const navigate = useNavigate();
@@ -19,7 +25,7 @@ function App() {
   useEffect(() => {
     const path = window.location.hash.substring(1); // Extract the path from the hash
 
-    if (path && path !== '/') {
+    if (path && path !== "/") {
       navigate(path, { replace: true });
     }
   }, [navigate]);
