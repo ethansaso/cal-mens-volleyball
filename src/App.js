@@ -1,10 +1,8 @@
-import { useEffect } from "react";
 import {
   Navigate,
   Route,
   BrowserRouter as Router,
   Routes,
-  useNavigate,
 } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/nav/Footer";
@@ -20,16 +18,6 @@ import Schedule from "./components/pages/Schedule";
 const path_prefix = "/";
 
 function App() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const path = window.location.hash.substring(1); // Extract the path from the hash
-
-    if (path && path !== "/") {
-      navigate(path, { replace: true });
-    }
-  }, [navigate]);
-
   return (
     <div className="layout">
       <VarsitySwiper />
